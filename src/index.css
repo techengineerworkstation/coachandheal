@@ -1571,6 +1571,151 @@ img {
   color: var(--color-text);
 }
 
+/* ============================================
+   BODY WELLNESS — FLIP CARDS
+   ============================================ */
+
+.body-wellness {
+  padding: 120px 0;
+  background: var(--gradient-bg);
+}
+
+.body-wellness__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.flip-card {
+  perspective: 1000px;
+  height: 220px;
+  cursor: pointer;
+  outline: none;
+}
+
+.flip-card:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-md);
+}
+
+.flip-card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card__inner--flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card__front,
+.flip-card__back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 16px;
+  background: var(--color-bg-card);
+}
+
+.flip-card__back {
+  transform: rotateY(180deg);
+}
+
+.flip-card__icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.flip-card__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.flip-card__description {
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.flip-card__tap-hint {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  margin-top: auto;
+  padding-top: 8px;
+  opacity: 0.6;
+}
+
+.flip-card__back-text {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.flip-card__cta {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary-light);
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 100px;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  transition: all 0.2s;
+}
+
+.flip-card__cta:hover {
+  background: rgba(99, 102, 241, 0.2);
+}
+
+/* Meditation Banner */
+
+.body-wellness__meditation {
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(168, 85, 247, 0.08), rgba(236, 72, 153, 0.08));
+  border: 1px solid var(--color-border);
+}
+
+.body-wellness__meditation-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.body-wellness__meditation h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  font-family: var(--font-serif);
+}
+
+.body-wellness__meditation h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-primary-light);
+  margin-bottom: 12px;
+}
+
+.body-wellness__meditation p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+}
+
 .btn--sm {
   padding: 10px 20px;
   font-size: 0.85rem;
@@ -2374,6 +2519,14 @@ img {
 
   .equipment__treatments-grid {
     grid-template-columns: 1fr;
+  }
+
+  .body-wellness__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .body-wellness__grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .venues__grid {

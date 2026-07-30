@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import { useInView } from '../hooks/useScrollPosition'
 import EquipmentSection from '../components/EquipmentSection'
+import BodyWellnessSection from '../components/BodyWellnessSection'
 import VenuesSection from '../components/VenuesSection'
 import ContactMap from '../components/ContactMap'
 
@@ -225,6 +226,9 @@ export default function ServicesPage() {
       {services.map((service, i) => (
         <ServiceDetail key={service.id} service={service} index={i} />
       ))}
+
+      {/* Complete Body Wellness */}
+      <BodyWellnessSection />
 
       {/* Equipment */}
       <EquipmentSection />
