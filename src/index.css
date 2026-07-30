@@ -1356,6 +1356,13 @@ img {
 .equipment-card__name {
   font-size: 1.2rem;
   font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.equipment-card__tagline {
+  font-size: 0.8rem;
+  color: var(--color-primary-light);
+  font-weight: 500;
   margin-bottom: 12px;
 }
 
@@ -1364,6 +1371,17 @@ img {
   color: var(--color-text-secondary);
   line-height: 1.7;
   margin-bottom: 16px;
+}
+
+.equipment-card__section {
+  margin-bottom: 16px;
+}
+
+.equipment-card__section h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--color-text);
 }
 
 .equipment-card__features {
@@ -1407,12 +1425,25 @@ img {
   color: var(--color-text-secondary);
 }
 
+.equipment-card__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
 .equipment__note {
   text-align: center;
   font-size: 0.95rem;
   color: var(--color-text-muted);
   margin-top: 40px;
-  font-style: italic;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.equipment__note strong {
+  color: var(--color-text-secondary);
 }
 
 .btn--sm {
