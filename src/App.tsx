@@ -1,12 +1,20 @@
 import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import HowItWorks from './components/HowItWorks'
-import Testimonials from './components/Testimonials'
-import Download from './components/Download'
 import Footer from './components/Footer'
+import ChatWidget from './components/ChatWidget'
+import HomePage from './pages/HomePage'
+import ServicesPage from './pages/ServicesPage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
+import TermsPage from './pages/TermsPage'
 import { preventClickjacking, setSecurityHeaders, logSecurityEvent } from './utils/security'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
 
 export default function App() {
   useEffect(() => {
@@ -41,15 +49,19 @@ export default function App() {
 
   return (
     <div className="app">
+      <ScrollToTop />
       <Navbar />
       <main>
-        <Hero />
-        <Features />
-        <HowItWorks />
-        <Testimonials />
-        <Download />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+        </Routes>
       </main>
       <Footer />
+      <ChatWidget />
     </div>
   )
 }

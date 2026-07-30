@@ -5,30 +5,30 @@ import { useInView } from '../hooks/useScrollPosition'
 const steps = [
   {
     step: '01',
-    title: 'Book a Free Discovery Call',
+    title: 'Let\'s Talk',
     description:
-      'Start with a conversation. Share your goals, challenges, and vision. We\'ll assess where you are and design a personalized coaching roadmap across life, health, career, or business.',
+      'It all starts with a conversation — no commitment, no pressure. We\'ll listen to where you are, what you\'re going through, and what you\'d love to change. From there, we\'ll map out a path that feels right for you.',
     color: '#6366f1',
   },
   {
     step: '02',
-    title: 'Connect Your EEG Headband',
+    title: 'Find Your Direction',
     description:
-      'Pair your BrainBit or Mindo headband via Bluetooth. The app calibrates in seconds and starts visualizing your brainwaves in real time — alpha, beta, theta, and gamma bands.',
+      'Together, we\'ll explore what\'s been holding you back and what\'s possible when those barriers start to shift. You\'ll gain clarity on your goals and a sense of what\'s ahead.',
     color: '#a855f7',
   },
   {
     step: '03',
-    title: 'Train Your Brain with Data',
+    title: 'Grow at Your Pace',
     description:
-      'Follow personalized neurofeedback exercises guided by live brain data. See how meditation, breathwork, or focus techniques impact your neural patterns — and adjust in the moment.',
+      'Through regular one-on-one sessions, you\'ll build new habits, develop stronger skills, and start seeing real changes in how you feel and show up. We move at your speed — never rushing, always supporting.',
     color: '#ec4899',
   },
   {
     step: '04',
-    title: 'Achieve Lasting Transformation',
+    title: 'Thrive in Every Area',
     description:
-      'Your coach reviews your brain data trends and refines your program. Get accountability, clarity, and measurable progress in every area of your life — without burnout.',
+      'As your confidence grows and your habits solidify, you\'ll start to notice the ripple effect — better relationships, more energy, clearer decisions, and a life that feels aligned with who you really are.',
     color: '#06b6d4',
   },
 ]
@@ -48,13 +48,13 @@ export default function HowItWorks() {
         >
           <span className="section-label">How It Works</span>
           <h2 className="section-title">
-            Your Transformation
+            Your Journey With Us
             <br />
-            <span className="gradient-text">Starts Here</span>
+            <span className="gradient-text">Starts Simple</span>
           </h2>
           <p className="section-subtitle">
-            Four simple steps from where you are to where you want to be —
-            backed by real brain data and expert guidance.
+            No complicated onboarding, no overwhelming programs. Just a
+            straightforward path from where you are to where you want to be.
           </p>
         </motion.div>
 

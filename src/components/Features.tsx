@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { useInView } from '../hooks/useScrollPosition'
 
 const features = [
@@ -11,8 +12,8 @@ const features = [
     ),
     title: 'Life Coaching',
     description:
-      'Discover your true purpose, overcome limiting beliefs, and build a fulfilling life aligned with your values. Gain deep self-awareness, stronger decision-making skills, better emotional resilience, and a meaningful balanced lifestyle.',
-    duration: '8–12 weeks (1:1 sessions)',
+      'Sometimes you just need someone to help you find clarity. We\'ll work together to uncover your purpose, overcome the beliefs holding you back, and build a life that feels meaningful — on your terms.',
+    duration: '8–12 weeks',
   },
   {
     icon: (
@@ -23,8 +24,8 @@ const features = [
     ),
     title: 'Career Coaching',
     description:
-      'Advance your career, negotiate better opportunities, prepare for interviews, or successfully change paths. Get clear career goals, professional CV & LinkedIn optimization, interview prep, and confidence in career transitions.',
-    duration: '6–10 weeks (1:1 sessions)',
+      'Whether you\'re eyeing a promotion, thinking about a change, or coming back after a break — we\'ll help you find your footing and move forward with confidence and a clear plan.',
+    duration: '6–10 weeks',
   },
   {
     icon: (
@@ -34,9 +35,8 @@ const features = [
     ),
     title: 'Health Coaching',
     description:
-      'Create sustainable habits for better energy, mental clarity, stress reduction, and long-term wellbeing. Personalized nutrition & movement plans, stress and anxiety management techniques, and increased energy — without extreme diets or burnout.',
-    duration: '8–12 weeks (1:1 sessions)',
-    ideal: 'Busy professionals who want to feel better in body and mind',
+      'Feeling run down, stressed, or out of sync? We\'ll help you build small, sustainable habits that give you more energy, better sleep, and a clearer mind — without extreme diets or burnout.',
+    duration: '8–12 weeks',
   },
   {
     icon: (
@@ -48,8 +48,8 @@ const features = [
     ),
     title: 'Business Coaching',
     description:
-      'Scale your business strategically, improve leadership skills, boost revenue, and achieve entrepreneurial freedom. Business strategy & growth planning, marketing systems, leadership skills, and financial clarity.',
-    duration: '12–16 weeks (1:1 sessions)',
+      'Running a business is rewarding — but it can also be lonely. We\'ll help you build the strategy, systems, and leadership skills to grow sustainably, without losing yourself in the process.',
+    duration: '12–16 weeks',
   },
   {
     icon: (
@@ -58,9 +58,9 @@ const features = [
         <path d="M12 6v6l4 2" />
       </svg>
     ),
-    title: 'Real-Time EEG Brainwave Analysis',
+    title: 'Wellness Technology',
     description:
-      'Sync your BrainBit or Mindo headband via Bluetooth and watch your brain activity live. See alpha, beta, theta, and gamma waves rendered in high-fidelity graphs as you work, rest, or meditate.',
+      'Want to see what\'s happening inside? Our gentle, non-invasive sensors give you a window into your body\'s natural rhythms — helping you understand yourself better and make smarter choices.',
   },
   {
     icon: (
@@ -68,9 +68,9 @@ const features = [
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
     ),
-    title: 'Privacy-First Neurofeedback',
+    title: 'Complete Privacy',
     description:
-      'Your brain data never leaves your phone. All AI analysis happens on-device with no cloud uploads. Focus, relaxation, and engagement metrics tracked locally — total ownership of your most private data.',
+      'Your most personal information stays yours. No cloud uploads, no third-party access, no surprises. We\'ve built our entire system with your privacy at its core.',
   },
 ]
 
@@ -105,16 +105,16 @@ export default function Features() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="section-label">Services</span>
+          <span className="section-label">What We Offer</span>
           <h2 className="section-title">
-            Coaching Meets
+            Coaching That Meets You
             <br />
-            <span className="gradient-text">Brain Science</span>
+            <span className="gradient-text">Wherever You Are</span>
           </h2>
           <p className="section-subtitle">
-            Holistic coaching for life, health, career, and business — powered
-            by real-time EEG brainwave data. True success comes when all areas
-            of life are in harmony.
+            Every person's journey is different. That's why we offer a range of
+            services — all designed to help you grow, heal, and thrive in the
+            areas that matter most to you.
           </p>
         </motion.div>
 
@@ -137,13 +137,21 @@ export default function Features() {
               {'duration' in feature && feature.duration && (
                 <div className="feature-card__meta">
                   <span className="feature-card__duration">{feature.duration}</span>
-                  {'ideal' in feature && feature.ideal && (
-                    <span className="feature-card__ideal">{feature.ideal}</span>
-                  )}
                 </div>
               )}
             </motion.div>
           ))}
+        </motion.div>
+
+        <motion.div
+          className="features__cta"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
+          <Link to="/services" className="btn btn--primary">
+            Learn More About Each Service
+          </Link>
         </motion.div>
       </div>
     </section>

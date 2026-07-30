@@ -8,7 +8,7 @@ const testimonials = [
     role: 'Life Coaching Client',
     avatar: 'AO',
     rating: 5,
-    text: 'Coach Ibe helped me gain clarity I\'d been searching for years. After 10 weeks of life coaching, I left a toxic job, rebuilt my confidence, and now I wake up with purpose every day. The holistic approach changed everything.',
+    text: 'Coach Ibe helped me gain clarity I\'d been searching for years. After 10 weeks, I left a toxic job, rebuilt my confidence, and now I wake up with purpose every day.',
     color: '#6366f1',
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
     role: 'Health Coaching Client',
     avatar: 'KA',
     rating: 5,
-    text: 'The health coaching program helped me build sustainable habits — not crash diets. I have more energy, better sleep, and my stress levels dropped dramatically. The brain data showed me exactly what was working.',
+    text: 'The health coaching program helped me build sustainable habits — not crash diets. I have more energy, better sleep, and my stress levels dropped dramatically.',
     color: '#a855f7',
   },
   {
@@ -24,7 +24,7 @@ const testimonials = [
     role: 'Career Coaching Client',
     avatar: 'TM',
     rating: 5,
-    text: 'I went from being stuck in a job I hated to landing my dream role in 8 weeks. The LinkedIn optimization, interview prep, and salary negotiation coaching gave me the edge I needed. Best investment I ever made.',
+    text: 'I went from being stuck to landing my dream role in 8 weeks. The interview prep and salary negotiation coaching gave me the edge I needed.',
     color: '#ec4899',
   },
   {
@@ -32,15 +32,15 @@ const testimonials = [
     role: 'Business Coaching Client',
     avatar: 'NE',
     rating: 5,
-    text: 'My revenue doubled in 4 months. Coach Ibe helped me build marketing systems, improve my leadership, and get financial clarity. The business strategy sessions are pure gold for any entrepreneur.',
+    text: 'My revenue doubled in 4 months. Coach Ibe helped me build marketing systems, improve my leadership, and get financial clarity. Pure gold for any entrepreneur.',
     color: '#06b6d4',
   },
   {
     name: 'Chidi U.',
-    role: 'EEG Brain Training User',
+    role: 'Wellness Tech User',
     avatar: 'CU',
     rating: 5,
-    text: 'Seeing my brainwaves in real time was a game-changer. The AI detected patterns in my focus I never knew existed. I now use neurofeedback before every important meeting. My cognitive performance is on another level.',
+    text: 'Seeing my body\'s natural patterns in real time was a game-changer. I now understand how different activities affect me and make smarter daily choices.',
     color: '#8b5cf6',
   },
   {
@@ -48,7 +48,7 @@ const testimonials = [
     role: 'Life & Health Client',
     avatar: 'FB',
     rating: 5,
-    text: 'Combining coaching with brain data is genius. My coach uses my EEG trends to tailor each session. I\'ve never felt more understood or supported. This is the future of personal development.',
+    text: 'Combining coaching with gentle wellness technology is brilliant. My coach uses my data to tailor each session. I\'ve never felt more understood or supported.',
     color: '#f59e0b',
   },
 ]
@@ -66,15 +66,15 @@ export default function Testimonials() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="section-label">Testimonials</span>
+          <span className="section-label">What People Say</span>
           <h2 className="section-title">
-            Real People,
+            Real Stories from
             <br />
-            <span className="gradient-text">Real Transformations</span>
+            <span className="gradient-text">Real People</span>
           </h2>
           <p className="section-subtitle">
-            Hear from clients who transformed their lives through our coaching
-            programs and brain training technology.
+            Hear from people who've walked this path before you — and found
+            their way to a better place.
           </p>
         </motion.div>
 

@@ -1,8 +1,24 @@
+import { Link } from 'react-router-dom'
+
 const footerLinks = {
-  Services: ['Life Coaching', 'Career Coaching', 'Health Coaching', 'Business Coaching', 'Brain Training'],
-  Programs: ['8-Week Life Transform', 'Career Accelerator', 'Health Reset', 'Business Scale-Up', 'Neurofeedback Basics'],
-  Resources: ['Blog', 'Podcast', 'Free Discovery Call', 'EEG Guide', 'Coaching FAQ'],
-  Legal: ['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'HIPAA Compliance', 'Data Security'],
+  Services: [
+    { label: 'Life Coaching', to: '/services#life-coaching' },
+    { label: 'Career Coaching', to: '/services#career-coaching' },
+    { label: 'Health Coaching', to: '/services#health-coaching' },
+    { label: 'Business Coaching', to: '/services#business-coaching' },
+    { label: 'Wellness Technology', to: '/services#wellness-tech' },
+  ],
+  Company: [
+    { label: 'About Us', to: '/about' },
+    { label: 'Contact', to: '/contact' },
+    { label: 'Terms of Service', to: '/terms' },
+    { label: 'Privacy Policy', to: '/terms' },
+  ],
+  Resources: [
+    { label: 'Free Discovery Call', to: '/contact' },
+    { label: 'Find a Venue', to: '/services#venues' },
+    { label: 'Equipment Guide', to: '/services#equipment' },
+  ],
 }
 
 export default function Footer() {
@@ -11,32 +27,58 @@ export default function Footer() {
       <div className="container">
         <div className="footer__top">
           <div className="footer__brand">
-            <a href="#" className="navbar__logo" aria-label="Coach & Heal Home">
-              <div className="navbar__logo-icon">C&H</div>
+            <Link to="/" className="navbar__logo" aria-label="Coach & Heal Home">
+              <img src="/logo.svg" alt="" className="navbar__logo-img" />
               <span className="navbar__logo-text">Coach & Heal</span>
-            </a>
+            </Link>
             <p className="footer__tagline">
               Empowering growth in life, health, career, and business.
               Personalized coaching to help you achieve balance, confidence,
-              and lasting success — powered by real-time brain data.
+              and lasting success — available online and across Nigeria.
             </p>
             <div className="footer__contact">
-              <p>+234 701 074 4142</p>
-              <p>Iberealenterprise@gmail.com</p>
+              <a href="https://wa.me/2347010744142" target="_blank" rel="noopener noreferrer noreferrer">
+                +234 701 074 4142
+              </a>
+              <a href="mailto:Iberealenterprise@gmail.com">Iberealenterprise@gmail.com</a>
             </div>
             <div className="footer__social">
-              {['WhatsApp', 'Instagram', 'LinkedIn', 'Twitter'].map((platform) => (
-                <a
-                  key={platform}
-                  href={platform === 'WhatsApp' ? 'https://wa.me/2347010744142' : `https://${platform.toLowerCase()}.com/coachandheal`}
-                  className="footer__social-link"
-                  target="_blank"
-                  rel="noopener noreferrer noreferrer"
-                  aria-label={platform}
-                >
-                  {platform[0]}
-                </a>
-              ))}
+              <a
+                href="https://wa.me/2347010744142"
+                className="footer__social-link"
+                target="_blank"
+                rel="noopener noreferrer noreferrer"
+                aria-label="WhatsApp"
+              >
+                W
+              </a>
+              <a
+                href="https://t.me/coachandheal"
+                className="footer__social-link"
+                target="_blank"
+                rel="noopener noreferrer noreferrer"
+                aria-label="Telegram"
+              >
+                T
+              </a>
+              <a
+                href="https://instagram.com/coachandheal"
+                className="footer__social-link"
+                target="_blank"
+                rel="noopener noreferrer noreferrer"
+                aria-label="Instagram"
+              >
+                I
+              </a>
+              <a
+                href="https://linkedin.com/company/coachandheal"
+                className="footer__social-link"
+                target="_blank"
+                rel="noopener noreferrer noreferrer"
+                aria-label="LinkedIn"
+              >
+                L
+              </a>
             </div>
           </div>
 
@@ -46,10 +88,10 @@ export default function Footer() {
                 <h4 className="footer__link-title">{category}</h4>
                 <ul className="footer__link-list">
                   {links.map((link) => (
-                    <li key={link}>
-                      <a href="#" className="footer__link">
-                        {link}
-                      </a>
+                    <li key={link.label}>
+                      <Link to={link.to} className="footer__link">
+                        {link.label}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -60,13 +102,12 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            &copy; {new Date().getFullYear()} Coach & Heal by Coach Ibe. All rights reserved.
+            &copy; {new Date().getFullYear()} Coach & Heal by Coach Ibe / Ibereal Enterprise. All rights reserved.
           </p>
           <p className="footer__disclaimer">
-            Coach & Heal is not a substitute for professional medical advice,
-            diagnosis, or treatment. EEG features require BrainBit or Mindo headband.
-            Always consult a qualified health provider regarding medical or mental
-            health concerns.
+            Our services are for personal and professional development. They are not
+            a substitute for professional medical or psychological advice. Always
+            consult a qualified healthcare provider for medical concerns.
           </p>
         </div>
       </div>
