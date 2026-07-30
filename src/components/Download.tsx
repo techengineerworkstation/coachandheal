@@ -18,51 +18,51 @@ export default function Download() {
           <div className="download__text">
             <span className="section-label">Get Started Today</span>
             <h2 className="download__title">
-              Your Brain Deserves
+              Ready to Begin Your
               <br />
-              <span className="gradient-text">Better Than Guesses</span>
+              <span className="gradient-text">Transformation?</span>
             </h2>
             <p className="download__description">
-              Download Coach & Heal for free. Connect your EEG headband or
-              start with guided coaching sessions. Transform your mental
-              performance with real-time brain data and expert guidance.
+              Let's have a conversation. Whether you feel stuck, overwhelmed,
+              or ready for the next big leap — we create a supportive space
+              for you to gain clarity, build confidence, and take consistent
+              action.
             </p>
             <div className="download__buttons">
               <a
-                href="https://apps.apple.com/app/coach-and-heal"
-                className="store-btn"
+                href="https://wa.me/2347010744142"
+                className="store-btn store-btn--primary"
                 target="_blank"
                 rel="noopener noreferrer noreferrer"
-                aria-label="Download on the App Store"
+                aria-label="Contact on WhatsApp"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
                 <div>
-                  <small>Download on the</small>
-                  <strong>App Store</strong>
+                  <small>Chat on</small>
+                  <strong>WhatsApp</strong>
                 </div>
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=com.aineotech.neurowellness"
+                href="mailto:Iberealenterprise@gmail.com"
                 className="store-btn"
-                target="_blank"
-                rel="noopener noreferrer noreferrer"
-                aria-label="Get it on Google Play"
+                aria-label="Send Email"
               >
-                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                  <path d="M3.18 23.04c.84.49 1.88.15 2.27-.62l7.73-8.68L3.18.58C2.68-.02 1.79-.25 1.2.23L12 12 1.2 23.77c.22.18.5.27.78.27.4 0 .8-.16 1.2-.5v.5zm14.36-7.74l-3.07 3.44-3.07-3.44 3.07-3.44 3.07 3.44zM3.18 23.04l10.29-5.84-2.57-2.89L3.18 23.04zm15.64-13.1l3.67 2.1c.77.44.77 1.54 0 1.98l-3.67 2.1-3.3-3.7 3.3-3.48z" />
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="24" height="24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
                 </svg>
                 <div>
-                  <small>Get it on</small>
-                  <strong>Google Play</strong>
+                  <small>Email us at</small>
+                  <strong>Iberealenterprise@gmail.com</strong>
                 </div>
               </a>
             </div>
-            <p className="download__note">
-              Requires BrainBit or Mindo EEG headband for brainwave features.
-              Coaching sessions available without hardware.
-            </p>
+            <div className="download__contact-info">
+              <p><strong>Phone / WhatsApp:</strong> +234 701 074 4142</p>
+              <p><strong>Location:</strong> Available for online coaching worldwide</p>
+            </div>
           </div>
 
           <motion.div
@@ -74,8 +74,8 @@ export default function Download() {
             <div className="phone-mockup">
               <div className="phone-mockup__screen">
                 <div className="phone-mockup__header">
-                  <div className="phone-mockup__greeting">Live EEG Session</div>
-                  <div className="phone-mockup__name">Brain State Active</div>
+                  <div className="phone-mockup__greeting">Welcome Back</div>
+                  <div className="phone-mockup__name">Coach Ibe</div>
                 </div>
                 <div className="phone-mockup__card">
                   <div className="phone-mockup__card-icon">
@@ -89,15 +89,15 @@ export default function Download() {
                 <div className="phone-mockup__actions">
                   <div className="phone-mockup__action">
                     <div className="phone-mockup__action-dot" style={{ background: '#6366f1' }} />
-                    Alpha Waves: 11.2 Hz
+                    Life Coaching Session
                   </div>
                   <div className="phone-mockup__action">
                     <div className="phone-mockup__action-dot" style={{ background: '#a855f7' }} />
-                    Beta Waves: 22.8 Hz
+                    Brain Training: Focus
                   </div>
                   <div className="phone-mockup__action">
                     <div className="phone-mockup__action-dot" style={{ background: '#ec4899' }} />
-                    Theta Waves: 6.1 Hz
+                    Evening Reflection
                   </div>
                 </div>
               </div>

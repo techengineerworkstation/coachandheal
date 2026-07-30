@@ -1,8 +1,8 @@
 const footerLinks = {
-  Product: ['Features', 'Pricing', 'For Teams', 'For Coaches', 'Enterprise'],
-  Company: ['About Us', 'Careers', 'Blog', 'Press', 'Partners'],
-  Resources: ['Help Center', 'Community', 'Webinars', 'Research', 'API'],
-  Legal: ['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'HIPAA', 'Security'],
+  Services: ['Life Coaching', 'Career Coaching', 'Health Coaching', 'Business Coaching', 'Brain Training'],
+  Programs: ['8-Week Life Transform', 'Career Accelerator', 'Health Reset', 'Business Scale-Up', 'Neurofeedback Basics'],
+  Resources: ['Blog', 'Podcast', 'Free Discovery Call', 'EEG Guide', 'Coaching FAQ'],
+  Legal: ['Privacy Policy', 'Terms of Service', 'Cookie Policy', 'HIPAA Compliance', 'Data Security'],
 }
 
 export default function Footer() {
@@ -16,14 +16,19 @@ export default function Footer() {
               <span className="navbar__logo-text">Coach & Heal</span>
             </a>
             <p className="footer__tagline">
-              Empowering millions to heal their minds, strengthen their bodies,
-              and live their fullest lives.
+              Empowering growth in life, health, career, and business.
+              Personalized coaching to help you achieve balance, confidence,
+              and lasting success — powered by real-time brain data.
             </p>
+            <div className="footer__contact">
+              <p>+234 701 074 4142</p>
+              <p>Iberealenterprise@gmail.com</p>
+            </div>
             <div className="footer__social">
-              {['Twitter', 'Instagram', 'LinkedIn', 'YouTube'].map((platform) => (
+              {['WhatsApp', 'Instagram', 'LinkedIn', 'Twitter'].map((platform) => (
                 <a
                   key={platform}
-                  href={`https://${platform.toLowerCase()}.com/coachandheal`}
+                  href={platform === 'WhatsApp' ? 'https://wa.me/2347010744142' : `https://${platform.toLowerCase()}.com/coachandheal`}
                   className="footer__social-link"
                   target="_blank"
                   rel="noopener noreferrer noreferrer"
@@ -55,12 +60,13 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            &copy; {new Date().getFullYear()} Coach & Heal. All rights reserved.
+            &copy; {new Date().getFullYear()} Coach & Heal by Coach Ibe. All rights reserved.
           </p>
           <p className="footer__disclaimer">
             Coach & Heal is not a substitute for professional medical advice,
-            diagnosis, or treatment. Always seek the advice of your physician
-            or other qualified health provider.
+            diagnosis, or treatment. EEG features require BrainBit or Mindo headband.
+            Always consult a qualified health provider regarding medical or mental
+            health concerns.
           </p>
         </div>
       </div>

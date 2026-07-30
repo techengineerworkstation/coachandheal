@@ -4,51 +4,51 @@ import { useInView } from '../hooks/useScrollPosition'
 
 const testimonials = [
   {
-    name: 'Dr. Sarah Chen',
-    role: 'Neuroscientist & Biohacker',
-    avatar: 'SC',
+    name: 'Adaeze O.',
+    role: 'Life Coaching Client',
+    avatar: 'AO',
     rating: 5,
-    text: 'As a neuroscientist, I was skeptical of consumer EEG. But the AI montage analysis in Coach & Heal is genuinely impressive. I use it to track how my meditation practice rewires my default mode network. The data doesn\'t lie.',
+    text: 'Coach Ibe helped me gain clarity I\'d been searching for years. After 10 weeks of life coaching, I left a toxic job, rebuilt my confidence, and now I wake up with purpose every day. The holistic approach changed everything.',
     color: '#6366f1',
   },
   {
-    name: 'Marcus Rivera',
-    role: 'Startup Founder',
-    avatar: 'MR',
+    name: 'Kemi A.',
+    role: 'Health Coaching Client',
+    avatar: 'KA',
     rating: 5,
-    text: 'I was burning out running my company. The coaching sessions combined with brain data showed me exactly when my focus peaks and crashes. I restructured my entire workday based on my EEG. Productivity up 40%, stress down to manageable levels.',
+    text: 'The health coaching program helped me build sustainable habits — not crash diets. I have more energy, better sleep, and my stress levels dropped dramatically. The brain data showed me exactly what was working.',
     color: '#a855f7',
   },
   {
-    name: 'Amara Williams',
-    role: 'Olympic Athlete',
-    avatar: 'AW',
+    name: 'Tunde M.',
+    role: 'Career Coaching Client',
+    avatar: 'TM',
     rating: 5,
-    text: 'The Before & After sessions changed everything. I can see exactly how my pre-competition breathing routine affects my neural engagement. My coach uses my brain data to fine-tune my mental game plan. Gold-medal level focus.',
+    text: 'I went from being stuck in a job I hated to landing my dream role in 8 weeks. The LinkedIn optimization, interview prep, and salary negotiation coaching gave me the edge I needed. Best investment I ever made.',
     color: '#ec4899',
   },
   {
-    name: 'David Park',
-    role: 'Software Engineer',
-    avatar: 'DP',
+    name: 'Ngozi E.',
+    role: 'Business Coaching Client',
+    avatar: 'NE',
     rating: 5,
-    text: 'The real-time EEG visualization is addictive. I actually watch my theta waves spike during flow states now. The app taught me to enter flow on command. My code quality improved and I ship faster than ever.',
+    text: 'My revenue doubled in 4 months. Coach Ibe helped me build marketing systems, improve my leadership, and get financial clarity. The business strategy sessions are pure gold for any entrepreneur.',
     color: '#06b6d4',
   },
   {
-    name: 'Elena Rodriguez',
-    role: 'Meditation Teacher',
-    avatar: 'ER',
+    name: 'Chidi U.',
+    role: 'EEG Brain Training User',
+    avatar: 'CU',
     rating: 5,
-    text: 'I recommend Coach & Heal to every student. Seeing your brainwaves during meditation removes all the guesswork. The AI detects subtle patterns I\'d miss manually. This is the future of contemplative practice.',
+    text: 'Seeing my brainwaves in real time was a game-changer. The AI detected patterns in my focus I never knew existed. I now use neurofeedback before every important meeting. My cognitive performance is on another level.',
     color: '#8b5cf6',
   },
   {
-    name: 'James Okafor',
-    role: 'Clinical Psychologist',
-    avatar: 'JO',
+    name: 'Fatima B.',
+    role: 'Life & Health Client',
+    avatar: 'FB',
     rating: 5,
-    text: 'The privacy-first approach sold me. All processing happens on-device — no cloud, no risk. I use this with clients struggling with anxiety and ADHD. The neurofeedback data gives us objective markers to track treatment progress.',
+    text: 'Combining coaching with brain data is genius. My coach uses my EEG trends to tailor each session. I\'ve never felt more understood or supported. This is the future of personal development.',
     color: '#f59e0b',
   },
 ]
@@ -68,13 +68,13 @@ export default function Testimonials() {
         >
           <span className="section-label">Testimonials</span>
           <h2 className="section-title">
-            Trusted by
+            Real People,
             <br />
-            <span className="gradient-text">Scientists & Seekers</span>
+            <span className="gradient-text">Real Transformations</span>
           </h2>
           <p className="section-subtitle">
-            From neuroscientists to athletes to everyday people — real stories
-            from users who transformed their minds with brain data.
+            Hear from clients who transformed their lives through our coaching
+            programs and brain training technology.
           </p>
         </motion.div>
 

@@ -501,6 +501,27 @@ img {
   line-height: 1.7;
 }
 
+.feature-card__meta {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.feature-card__duration {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary-light);
+}
+
+.feature-card__ideal {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
 /* ============================================
    HOW IT WORKS
    ============================================ */
@@ -726,6 +747,51 @@ img {
   margin-top: 16px;
   font-style: italic;
   opacity: 0.7;
+}
+
+.download__contact-info {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: rgba(99, 102, 241, 0.06);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+.download__contact-info p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+}
+
+.download__contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.download__contact-info strong {
+  color: var(--color-text);
+}
+
+.store-btn--primary {
+  background: var(--gradient-primary);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+}
+
+.store-btn--primary:hover {
+  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+}
+
+.footer__contact {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer__contact p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
 }
 
 /* Phone Mockup */

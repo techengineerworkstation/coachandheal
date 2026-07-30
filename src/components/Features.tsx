@@ -6,23 +6,37 @@ const features = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
       </svg>
     ),
-    title: 'Real-Time EEG Brainwave Visualization',
+    title: 'Life Coaching',
     description:
-      'Sync your BrainBit or Mindo headband via Bluetooth and watch your brain activity live. See alpha, beta, theta, and gamma waves rendered in high-fidelity graphs as you work, rest, or meditate.',
+      'Discover your true purpose, overcome limiting beliefs, and build a fulfilling life aligned with your values. Gain deep self-awareness, stronger decision-making skills, better emotional resilience, and a meaningful balanced lifestyle.',
+    duration: '8–12 weeks (1:1 sessions)',
   },
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M12 6v6l4 2" />
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+        <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
       </svg>
     ),
-    title: 'Focus, Relaxation & Engagement Metrics',
+    title: 'Career Coaching',
     description:
-      'Get instant quantitative scores for your concentration depth, relaxation state, and cognitive engagement. Set benchmarks and track improvement over weeks, months, and years.',
+      'Advance your career, negotiate better opportunities, prepare for interviews, or successfully change paths. Get clear career goals, professional CV & LinkedIn optimization, interview prep, and confidence in career transitions.',
+    duration: '6–10 weeks (1:1 sessions)',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+      </svg>
+    ),
+    title: 'Health Coaching',
+    description:
+      'Create sustainable habits for better energy, mental clarity, stress reduction, and long-term wellbeing. Personalized nutrition & movement plans, stress and anxiety management techniques, and increased energy — without extreme diets or burnout.',
+    duration: '8–12 weeks (1:1 sessions)',
+    ideal: 'Busy professionals who want to feel better in body and mind',
   },
   {
     icon: (
@@ -32,21 +46,21 @@ const features = [
         <path d="M2 12l10 5 10-5" />
       </svg>
     ),
-    title: 'AI-Powered Neural Pattern Analysis',
+    title: 'Business Coaching',
     description:
-      'Our sophisticated AI models build custom montages to detect data irregularities and map your unique neural patterns. All analysis happens on-device — your brain data never leaves your phone.',
+      'Scale your business strategically, improve leadership skills, boost revenue, and achieve entrepreneurial freedom. Business strategy & growth planning, marketing systems, leadership skills, and financial clarity.',
+    duration: '12–16 weeks (1:1 sessions)',
   },
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-        <circle cx="9" cy="7" r="4" />
-        <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 6v6l4 2" />
       </svg>
     ),
-    title: '1-on-1 Expert Coaching',
+    title: 'Real-Time EEG Brainwave Analysis',
     description:
-      'Connect with certified wellness coaches who review your brain data and guide your journey. Personalized sessions for stress management, emotional regulation, performance optimization, and habit change.',
+      'Sync your BrainBit or Mindo headband via Bluetooth and watch your brain activity live. See alpha, beta, theta, and gamma waves rendered in high-fidelity graphs as you work, rest, or meditate.',
   },
   {
     icon: (
@@ -54,19 +68,9 @@ const features = [
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
     ),
-    title: 'Privacy-First Architecture',
+    title: 'Privacy-First Neurofeedback',
     description:
-      'Your brain data is the most private information you have. No cloud uploads, no server transfers. All AI processing happens locally on your device. You own your data — period.',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-      </svg>
-    ),
-    title: 'Before & After Neurofeedback',
-    description:
-      'Run "Before & After" sessions to see exactly how meditation, sleep, breathwork, or coaching impacts your brain in real time. Quantitative proof that your habits work — or don\'t.',
+      'Your brain data never leaves your phone. All AI analysis happens on-device with no cloud uploads. Focus, relaxation, and engagement metrics tracked locally — total ownership of your most private data.',
   },
 ]
 
@@ -101,16 +105,16 @@ export default function Features() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="section-label">Features</span>
+          <span className="section-label">Services</span>
           <h2 className="section-title">
-            Brain Data Meets
+            Coaching Meets
             <br />
-            <span className="gradient-text">Expert Coaching</span>
+            <span className="gradient-text">Brain Science</span>
           </h2>
           <p className="section-subtitle">
-            Professional-grade EEG insights paired with personalized coaching
-            — the complete toolkit for mastering your mind and transforming
-            your life.
+            Holistic coaching for life, health, career, and business — powered
+            by real-time EEG brainwave data. True success comes when all areas
+            of life are in harmony.
           </p>
         </motion.div>
 
@@ -130,6 +134,14 @@ export default function Features() {
               <div className="feature-card__icon">{feature.icon}</div>
               <h3 className="feature-card__title">{feature.title}</h3>
               <p className="feature-card__description">{feature.description}</p>
+              {'duration' in feature && feature.duration && (
+                <div className="feature-card__meta">
+                  <span className="feature-card__duration">{feature.duration}</span>
+                  {'ideal' in feature && feature.ideal && (
+                    <span className="feature-card__ideal">{feature.ideal}</span>
+                  )}
+                </div>
+              )}
             </motion.div>
           ))}
         </motion.div>

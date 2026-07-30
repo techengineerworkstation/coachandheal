@@ -5,30 +5,30 @@ import { useInView } from '../hooks/useScrollPosition'
 const steps = [
   {
     step: '01',
-    title: 'Connect Your Headband',
+    title: 'Book a Free Discovery Call',
     description:
-      'Pair your BrainBit or Mindo EEG headband via Bluetooth. The app auto-detects your device and calibrates sensors in seconds. No wires, no hassle — just seamless brain-computer interface.',
+      'Start with a conversation. Share your goals, challenges, and vision. We\'ll assess where you are and design a personalized coaching roadmap across life, health, career, or business.',
     color: '#6366f1',
   },
   {
     step: '02',
-    title: 'Measure Your Brain State',
+    title: 'Connect Your EEG Headband',
     description:
-      'Start a session and watch your real-time brainwave visualization. Our AI maps your focus, relaxation, and engagement levels with clinical-grade accuracy. See your neural patterns like never before.',
+      'Pair your BrainBit or Mindo headband via Bluetooth. The app calibrates in seconds and starts visualizing your brainwaves in real time — alpha, beta, theta, and gamma bands.',
     color: '#a855f7',
   },
   {
     step: '03',
-    title: 'Train with Neurofeedback',
+    title: 'Train Your Brain with Data',
     description:
-      'Follow personalized neurofeedback exercises guided by your live brain data. Adjust your meditation, breathing, or focus techniques in the moment — and see the impact on your EEG instantly.',
+      'Follow personalized neurofeedback exercises guided by live brain data. See how meditation, breathwork, or focus techniques impact your neural patterns — and adjust in the moment.',
     color: '#ec4899',
   },
   {
     step: '04',
-    title: 'Grow with Expert Coaching',
+    title: 'Achieve Lasting Transformation',
     description:
-      'Your coach reviews your brain data trends and tailors your program. Get personalized guidance on sleep optimization, stress management, cognitive endurance, and emotional regulation.',
+      'Your coach reviews your brain data trends and refines your program. Get accountability, clarity, and measurable progress in every area of your life — without burnout.',
     color: '#06b6d4',
   },
 ]
@@ -48,13 +48,13 @@ export default function HowItWorks() {
         >
           <span className="section-label">How It Works</span>
           <h2 className="section-title">
-            From Brainwaves to
+            Your Transformation
             <br />
-            <span className="gradient-text">Breakthrough</span>
+            <span className="gradient-text">Starts Here</span>
           </h2>
           <p className="section-subtitle">
-            Four simple steps to transform your mental performance with
-            real data, not guesses.
+            Four simple steps from where you are to where you want to be —
+            backed by real brain data and expert guidance.
           </p>
         </motion.div>
 
