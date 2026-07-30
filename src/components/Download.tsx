@@ -60,7 +60,7 @@ export default function Download() {
                 </div>
               </a>
               <a
-                href="mailto:Iberealenterprise@gmail.com?subject=Coaching%20Inquiry"
+                href="mailto:Ibe@coachandheal.store?subject=Coaching%20Inquiry"
                 className="store-btn"
                 aria-label="Send Email"
               >

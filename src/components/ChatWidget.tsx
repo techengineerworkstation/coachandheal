@@ -14,9 +14,9 @@ const botResponses: Record<string, string> = {
   coaching: "Our coaching sessions are personalized one-on-one experiences. Each program runs 6-16 weeks depending on your goals. We start with a free discovery call to understand where you are and where you want to be. Would you like to book one?",
   equipment: "We use gentle, non-invasive wellness devices like the BrainBit and MINDO headbands. They help us understand your body's natural patterns so we can personalize your coaching. But don't worry — they're completely optional!",
   pricing: "Our coaching programs vary based on duration and format. We offer flexible payment options to make our services accessible. The best way to get specific pricing is to book a free discovery call. Shall I help you with that?",
-  contact: "You can reach us through:\n\nWhatsApp: +234 701 074 4142\nEmail: Iberealenterprise@gmail.com\n\nOr book a free discovery call right on our website!",
+  contact: "You can reach us through:\n\nWhatsApp: +234 701 074 4142\nEmail: Ibe@coachandheal.store\n\nOr book a free discovery call right on our website!",
   lagos: "We have partner wellness centers across Lagos, Nigeria — including Victoria Island, Ikeja, and other areas. We also offer online coaching worldwide. Would you like to know about specific locations?",
-  default: "I'd love to help you with that! For the most personalized response, I'd recommend booking a free discovery call with Coach Ibe. You can WhatsApp us at +234 701 074 4142 or email Iberealenterprise@gmail.com. Is there anything else I can help with?",
+  default: "I'd love to help you with that! For the most personalized response, I'd recommend booking a free discovery call with Coach Ibe. You can WhatsApp us at +234 701 074 4142 or email Ibe@coachandheal.store. Is there anything else I can help with?",
 }
 
 function getResponse(input: string): string {

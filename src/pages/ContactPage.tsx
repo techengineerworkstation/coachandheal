@@ -58,7 +58,7 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h3>Email</h3>
-                <a href="mailto:Iberealenterprise@gmail.com">Iberealenterprise@gmail.com</a>
+                <a href="mailto:Ibe@coachandheal.store">Ibe@coachandheal.store</a>
                 <p>We typically respond within 24 hours</p>
               </div>
 
@@ -141,7 +141,7 @@ export default function ContactPage() {
                 Book Free Discovery Call
               </a>
               <a
-                href="mailto:Iberealenterprise@gmail.com?subject=Discovery%20Call%20Request"
+                href="mailto:Ibe@coachandheal.store?subject=Discovery%20Call%20Request"
                 className="btn btn--ghost"
               >
                 Send Us an Email

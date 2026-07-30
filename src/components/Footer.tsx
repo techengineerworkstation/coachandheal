@@ -40,7 +40,7 @@ export default function Footer() {
               <a href="https://wa.me/2347010744142" target="_blank" rel="noopener noreferrer noreferrer">
                 +234 701 074 4142
               </a>
-              <a href="mailto:Iberealenterprise@gmail.com">Iberealenterprise@gmail.com</a>
+              <a href="mailto:Ibe@coachandheal.store">Ibe@coachandheal.store</a>
             </div>
             <div className="footer__social">
               <a

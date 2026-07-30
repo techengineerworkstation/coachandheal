@@ -55,7 +55,7 @@ export default function ContactMap() {
                   </svg>
                   <div>
                     <strong>Email</strong>
-                    <a href="mailto:Iberealenterprise@gmail.com">Iberealenterprise@gmail.com</a>
+                    <a href="mailto:Ibe@coachandheal.store">Ibe@coachandheal.store</a>
                   </div>
                 </div>
                 <div className="contact-map__item">
