@@ -18,18 +18,18 @@ export default function Download() {
           <div className="download__text">
             <span className="section-label">Get Started Today</span>
             <h2 className="download__title">
-              Your Healing Journey
+              Your Brain Deserves
               <br />
-              <span className="gradient-text">Starts with One Tap</span>
+              <span className="gradient-text">Better Than Guesses</span>
             </h2>
             <p className="download__description">
-              Join over 2 million people who have already transformed their
-              lives. Download Coach & Heal for free and take the first step
-              toward a healthier, happier you.
+              Download Coach & Heal for free. Connect your EEG headband or
+              start with guided coaching sessions. Transform your mental
+              performance with real-time brain data and expert guidance.
             </p>
             <div className="download__buttons">
               <a
-                href="https://apps.apple.com"
+                href="https://apps.apple.com/app/coach-and-heal"
                 className="store-btn"
                 target="_blank"
                 rel="noopener noreferrer noreferrer"
@@ -44,7 +44,7 @@ export default function Download() {
                 </div>
               </a>
               <a
-                href="https://play.google.com"
+                href="https://play.google.com/store/apps/details?id=com.aineotech.neurowellness"
                 className="store-btn"
                 target="_blank"
                 rel="noopener noreferrer noreferrer"
@@ -59,6 +59,10 @@ export default function Download() {
                 </div>
               </a>
             </div>
+            <p className="download__note">
+              Requires BrainBit or Mindo EEG headband for brainwave features.
+              Coaching sessions available without hardware.
+            </p>
           </div>
 
           <motion.div
@@ -70,8 +74,8 @@ export default function Download() {
             <div className="phone-mockup">
               <div className="phone-mockup__screen">
                 <div className="phone-mockup__header">
-                  <div className="phone-mockup__greeting">Good Morning</div>
-                  <div className="phone-mockup__name">Welcome Back</div>
+                  <div className="phone-mockup__greeting">Live EEG Session</div>
+                  <div className="phone-mockup__name">Brain State Active</div>
                 </div>
                 <div className="phone-mockup__card">
                   <div className="phone-mockup__card-icon">
@@ -79,21 +83,21 @@ export default function Download() {
                       <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                     </svg>
                   </div>
-                  <div className="phone-mockup__card-title">Today's Progress</div>
+                  <div className="phone-mockup__card-title">Focus Score</div>
                   <div className="phone-mockup__card-value">87%</div>
                 </div>
                 <div className="phone-mockup__actions">
                   <div className="phone-mockup__action">
                     <div className="phone-mockup__action-dot" style={{ background: '#6366f1' }} />
-                    Morning Meditation
+                    Alpha Waves: 11.2 Hz
                   </div>
                   <div className="phone-mockup__action">
                     <div className="phone-mockup__action-dot" style={{ background: '#a855f7' }} />
-                    Breathwork Session
+                    Beta Waves: 22.8 Hz
                   </div>
                   <div className="phone-mockup__action">
                     <div className="phone-mockup__action-dot" style={{ background: '#ec4899' }} />
-                    Evening Journal
+                    Theta Waves: 6.1 Hz
                   </div>
                 </div>
               </div>

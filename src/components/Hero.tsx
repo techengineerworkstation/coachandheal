@@ -23,9 +23,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Transform Your Mind.
+          Decode Your Brain.
           <br />
-          <span className="hero__title-gradient">Heal Your Body.</span>
+          <span className="hero__title-gradient">Transform Your Life.</span>
         </motion.h1>
 
         <motion.p
@@ -34,9 +34,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Expert-guided coaching for mental clarity, emotional resilience, and
-          physical wellness — all in one app. Your journey to a better self
-          starts here.
+          The world's first platform combining real-time EEG brainwave analysis
+          with expert personal coaching. Stop guessing — use data to master your
+          focus, regulate your nervous system, and heal from the inside out.
         </motion.p>
 
         <motion.div
@@ -64,7 +64,7 @@ export default function Hero() {
         >
           <div className="hero__stat">
             <span className="hero__stat-number">2M+</span>
-            <span className="hero__stat-label">Active Users</span>
+            <span className="hero__stat-label">Brain Sessions</span>
           </div>
           <div className="hero__stat-divider" />
           <div className="hero__stat">
@@ -73,8 +73,8 @@ export default function Hero() {
           </div>
           <div className="hero__stat-divider" />
           <div className="hero__stat">
-            <span className="hero__stat-number">500+</span>
-            <span className="hero__stat-label">Expert Coaches</span>
+            <span className="hero__stat-number">100%</span>
+            <span className="hero__stat-label">On-Device AI</span>
           </div>
         </motion.div>
       </div>

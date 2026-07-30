@@ -5,30 +5,30 @@ import { useInView } from '../hooks/useScrollPosition'
 const steps = [
   {
     step: '01',
-    title: 'Download & Sign Up',
+    title: 'Connect Your Headband',
     description:
-      'Get the app in seconds. Create your profile with a quick wellness assessment so we can personalize your experience.',
+      'Pair your BrainBit or Mindo EEG headband via Bluetooth. The app auto-detects your device and calibrates sensors in seconds. No wires, no hassle — just seamless brain-computer interface.',
     color: '#6366f1',
   },
   {
     step: '02',
-    title: 'Set Your Goals',
+    title: 'Measure Your Brain State',
     description:
-      'Choose what matters most — stress relief, better sleep, emotional balance, or physical vitality. Your path, your pace.',
+      'Start a session and watch your real-time brainwave visualization. Our AI maps your focus, relaxation, and engagement levels with clinical-grade accuracy. See your neural patterns like never before.',
     color: '#a855f7',
   },
   {
     step: '03',
-    title: 'Start Your Journey',
+    title: 'Train with Neurofeedback',
     description:
-      'Follow your customized daily plan. Guided sessions, breathing exercises, journaling prompts, and movement routines.',
+      'Follow personalized neurofeedback exercises guided by your live brain data. Adjust your meditation, breathing, or focus techniques in the moment — and see the impact on your EEG instantly.',
     color: '#ec4899',
   },
   {
     step: '04',
-    title: 'Grow & Heal',
+    title: 'Grow with Expert Coaching',
     description:
-      'Watch your progress unfold. Celebrate milestones, unlock new content, and connect with coaches who support your growth.',
+      'Your coach reviews your brain data trends and tailors your program. Get personalized guidance on sleep optimization, stress management, cognitive endurance, and emotional regulation.',
     color: '#06b6d4',
   },
 ]
@@ -48,13 +48,13 @@ export default function HowItWorks() {
         >
           <span className="section-label">How It Works</span>
           <h2 className="section-title">
-            Four Steps to a
+            From Brainwaves to
             <br />
-            <span className="gradient-text">Better You</span>
+            <span className="gradient-text">Breakthrough</span>
           </h2>
           <p className="section-subtitle">
-            Getting started is simple. In just a few minutes, you'll have your
-            personalized wellness plan ready.
+            Four simple steps to transform your mental performance with
+            real data, not guesses.
           </p>
         </motion.div>
 

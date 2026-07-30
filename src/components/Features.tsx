@@ -6,13 +6,35 @@ const features = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z" />
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+      </svg>
+    ),
+    title: 'Real-Time EEG Brainwave Visualization',
+    description:
+      'Sync your BrainBit or Mindo headband via Bluetooth and watch your brain activity live. See alpha, beta, theta, and gamma waves rendered in high-fidelity graphs as you work, rest, or meditate.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <circle cx="12" cy="12" r="10" />
         <path d="M12 6v6l4 2" />
       </svg>
     ),
-    title: 'Daily Wellness Sessions',
+    title: 'Focus, Relaxation & Engagement Metrics',
     description:
-      'Personalized 10-20 minute sessions tailored to your goals. Build consistency with guided meditation, breathwork, and mindful movement.',
+      'Get instant quantitative scores for your concentration depth, relaxation state, and cognitive engagement. Set benchmarks and track improvement over weeks, months, and years.',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+        <path d="M2 17l10 5 10-5" />
+        <path d="M2 12l10 5 10-5" />
+      </svg>
+    ),
+    title: 'AI-Powered Neural Pattern Analysis',
+    description:
+      'Our sophisticated AI models build custom montages to detect data irregularities and map your unique neural patterns. All analysis happens on-device — your brain data never leaves your phone.',
   },
   {
     icon: (
@@ -22,19 +44,9 @@ const features = [
         <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
       </svg>
     ),
-    title: '1-on-1 Coaching',
+    title: '1-on-1 Expert Coaching',
     description:
-      'Connect with certified wellness coaches via video, voice, or chat. Get personalized guidance from professionals who understand your journey.',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-      </svg>
-    ),
-    title: 'Progress Tracking',
-    description:
-      'Monitor your mental and physical wellness with intuitive dashboards. Track mood, sleep, stress levels, and milestone achievements.',
+      'Connect with certified wellness coaches who review your brain data and guide your journey. Personalized sessions for stress management, emotional regulation, performance optimization, and habit change.',
   },
   {
     icon: (
@@ -42,22 +54,9 @@ const features = [
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
     ),
-    title: 'Safe & Confidential',
+    title: 'Privacy-First Architecture',
     description:
-      'Your data is encrypted end-to-end. We never sell personal information. HIPAA-compliant platform with SOC 2 Type II certification.',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-        <line x1="9" y1="9" x2="9.01" y2="9" />
-        <line x1="15" y1="9" x2="15.01" y2="9" />
-      </svg>
-    ),
-    title: 'Community Support',
-    description:
-      'Join thousands of like-minded individuals in moderated support groups. Share experiences, celebrate wins, and grow together.',
+      'Your brain data is the most private information you have. No cloud uploads, no server transfers. All AI processing happens locally on your device. You own your data — period.',
   },
   {
     icon: (
@@ -65,9 +64,9 @@ const features = [
         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
       </svg>
     ),
-    title: 'AI-Powered Insights',
+    title: 'Before & After Neurofeedback',
     description:
-      'Advanced AI analyzes your patterns to suggest optimal session times, techniques, and lifestyle adjustments for maximum wellness impact.',
+      'Run "Before & After" sessions to see exactly how meditation, sleep, breathwork, or coaching impacts your brain in real time. Quantitative proof that your habits work — or don\'t.',
   },
 ]
 
@@ -104,13 +103,14 @@ export default function Features() {
         >
           <span className="section-label">Features</span>
           <h2 className="section-title">
-            Everything You Need to
+            Brain Data Meets
             <br />
-            <span className="gradient-text">Thrive & Heal</span>
+            <span className="gradient-text">Expert Coaching</span>
           </h2>
           <p className="section-subtitle">
-            A complete wellness ecosystem designed by experts, powered by
-            technology, and built around you.
+            Professional-grade EEG insights paired with personalized coaching
+            — the complete toolkit for mastering your mind and transforming
+            your life.
           </p>
         </motion.div>
 

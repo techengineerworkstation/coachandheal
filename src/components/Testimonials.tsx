@@ -4,51 +4,51 @@ import { useInView } from '../hooks/useScrollPosition'
 
 const testimonials = [
   {
-    name: 'Sarah Mitchell',
-    role: 'Marketing Executive',
-    avatar: 'SM',
+    name: 'Dr. Sarah Chen',
+    role: 'Neuroscientist & Biohacker',
+    avatar: 'SC',
     rating: 5,
-    text: 'Coach & Heal completely transformed my approach to stress management. The daily sessions helped me find calm in the chaos of corporate life. I sleep better, think clearer, and feel more present with my family.',
+    text: 'As a neuroscientist, I was skeptical of consumer EEG. But the AI montage analysis in Coach & Heal is genuinely impressive. I use it to track how my meditation practice rewires my default mode network. The data doesn\'t lie.',
     color: '#6366f1',
   },
   {
-    name: 'Dr. James Okafor',
-    role: 'Physician & Wellness Advocate',
-    avatar: 'JO',
+    name: 'Marcus Rivera',
+    role: 'Startup Founder',
+    avatar: 'MR',
     rating: 5,
-    text: 'As a doctor, I appreciate the evidence-based approach. The AI insights are remarkably accurate, and the coaching quality rivals in-person sessions. I recommend this to all my patients.',
+    text: 'I was burning out running my company. The coaching sessions combined with brain data showed me exactly when my focus peaks and crashes. I restructured my entire workday based on my EEG. Productivity up 40%, stress down to manageable levels.',
     color: '#a855f7',
   },
   {
-    name: 'Elena Rodriguez',
-    role: 'Yoga Instructor',
-    avatar: 'ER',
+    name: 'Amara Williams',
+    role: 'Olympic Athlete',
+    avatar: 'AW',
     rating: 5,
-    text: 'Even as a wellness professional, I needed support for my own mental health. The community here is incredibly supportive, and the personalized plans have deepened my own practice.',
+    text: 'The Before & After sessions changed everything. I can see exactly how my pre-competition breathing routine affects my neural engagement. My coach uses my brain data to fine-tune my mental game plan. Gold-medal level focus.',
     color: '#ec4899',
   },
   {
-    name: 'Marcus Chen',
+    name: 'David Park',
     role: 'Software Engineer',
-    avatar: 'MC',
+    avatar: 'DP',
     rating: 5,
-    text: 'The 5-minute breathing exercises between coding sessions are a game-changer. My focus has improved by 40% according to my own tracking. The progress dashboard keeps me motivated.',
+    text: 'The real-time EEG visualization is addictive. I actually watch my theta waves spike during flow states now. The app taught me to enter flow on command. My code quality improved and I ship faster than ever.',
     color: '#06b6d4',
   },
   {
-    name: 'Amara Williams',
-    role: 'Entrepreneur',
-    avatar: 'AW',
+    name: 'Elena Rodriguez',
+    role: 'Meditation Teacher',
+    avatar: 'ER',
     rating: 5,
-    text: 'Building a startup nearly broke me. Coach & Heal gave me the tools to manage anxiety, maintain balance, and lead from a place of clarity. Every founder needs this app.',
+    text: 'I recommend Coach & Heal to every student. Seeing your brainwaves during meditation removes all the guesswork. The AI detects subtle patterns I\'d miss manually. This is the future of contemplative practice.',
     color: '#8b5cf6',
   },
   {
-    name: 'David Park',
-    role: 'Teacher',
-    avatar: 'DP',
+    name: 'James Okafor',
+    role: 'Clinical Psychologist',
+    avatar: 'JO',
     rating: 5,
-    text: 'Teaching during challenging times took a toll on my well-being. The journaling prompts and mood tracking helped me identify patterns I never noticed before. Life-changing.',
+    text: 'The privacy-first approach sold me. All processing happens on-device — no cloud, no risk. I use this with clients struggling with anxiety and ADHD. The neurofeedback data gives us objective markers to track treatment progress.',
     color: '#f59e0b',
   },
 ]
@@ -68,13 +68,13 @@ export default function Testimonials() {
         >
           <span className="section-label">Testimonials</span>
           <h2 className="section-title">
-            Loved by
+            Trusted by
             <br />
-            <span className="gradient-text">Millions Worldwide</span>
+            <span className="gradient-text">Scientists & Seekers</span>
           </h2>
           <p className="section-subtitle">
-            Real stories from real people who transformed their lives with
-            Coach & Heal.
+            From neuroscientists to athletes to everyday people — real stories
+            from users who transformed their minds with brain data.
           </p>
         </motion.div>
 
