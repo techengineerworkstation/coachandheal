@@ -1446,6 +1446,131 @@ img {
   color: var(--color-text-secondary);
 }
 
+.equipment__section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 48px 0 24px;
+  font-family: var(--font-serif);
+}
+
+.equipment__section-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.equipment__grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.equipment-card--compact {
+  padding: 24px;
+}
+
+.equipment-card--compact .equipment-card__name {
+  font-size: 1rem;
+}
+
+.equipment-card--compact .equipment-card__description {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+.equipment-card__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.equipment-card__location {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-top: 8px;
+}
+
+/* Conditions Grid */
+
+.equipment__conditions {
+  margin-bottom: 40px;
+}
+
+.equipment__conditions-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-family: var(--font-serif);
+}
+
+.equipment__conditions-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.equipment__conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.equipment__condition-card {
+  padding: 20px;
+  border-radius: var(--radius-md);
+  background: rgba(99, 102, 241, 0.04);
+  border: 1px solid var(--color-border);
+}
+
+.equipment__condition-card h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--color-primary-light);
+}
+
+.equipment__condition-card ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.equipment__condition-card li {
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 100px;
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--color-text-secondary);
+}
+
+/* Treatments Grid */
+
+.equipment__treatments {
+  margin-top: 40px;
+}
+
+.equipment__treatments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.equipment__treatment-item {
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.equipment__treatment-item strong {
+  color: var(--color-text);
+}
+
 .btn--sm {
   padding: 10px 20px;
   font-size: 0.85rem;
@@ -2185,6 +2310,18 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .equipment__grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .equipment__conditions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .equipment__treatments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .venues__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2224,6 +2361,18 @@ img {
   }
 
   .equipment__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .equipment__grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .equipment__conditions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .equipment__treatments-grid {
     grid-template-columns: 1fr;
   }
 
