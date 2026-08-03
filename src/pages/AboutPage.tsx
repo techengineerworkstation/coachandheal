@@ -76,7 +76,7 @@ export default function AboutPage() {
               We are passionate and results-driven coaches committed to helping
               individuals achieve holistic success. With years of experience, we
               specialize in guiding people through meaningful transformations in
-              their personal life, health, career, and world.
+              their personal life, health, career, and world business.
             </p>
             <p>
               Our approach is holistic and personalized. We believe true success
@@ -168,7 +168,7 @@ export default function AboutPage() {
           >
             <h2>Meet Coach Ibe</h2>
             <p>
-              Certified Life, Health, Career & World Coach. When not
+              Certified Life, Health, Career & World Business Coach. When not
               coaching, you'll find us reading, exercising, or spending quality
               time with family. We believe in practicing what we preach.
             </p>

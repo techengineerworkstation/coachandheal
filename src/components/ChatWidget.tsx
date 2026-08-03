@@ -10,7 +10,7 @@ interface Message {
 
 const botResponses: Record<string, string> = {
   greeting: "Hello! Welcome to Coach & Heal. I'm here to help you find the right support for your journey. How can I assist you today?",
-  services: "We offer four main coaching services:\n\n1. Life Coaching — Find clarity and purpose\n2. Career Coaching — Advance your professional path\n3. Health Coaching — Build sustainable wellness habits\n4. World Coaching — Scale your world strategically\n\nWhich one interests you most?",
+  services: "We offer four main coaching services:\n\n1. Life Coaching — Find clarity and purpose\n2. Career Coaching — Advance your professional path\n3. Health Coaching — Build sustainable wellness habits\n4. World Business Coaching — Scale your world strategically\n\nWhich one interests you most?",
   coaching: "Our coaching sessions are personalized one-on-one experiences. Each program runs 6-16 weeks depending on your goals. We start with a free discovery call to understand where you are and where you want to be. Would you like to book one?",
   equipment: "We use gentle, non-invasive wellness devices like the BrainBit and MINDO headbands. They help us understand your body's natural patterns so we can personalize your coaching. But don't worry — they're completely optional!",
   pricing: "Our coaching programs vary based on duration and format. We offer flexible payment options to make our services accessible. The best way to get specific pricing is to book a free discovery call. Shall I help you with that?",

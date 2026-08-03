@@ -46,9 +46,9 @@ const features = [
         <path d="M2 12l10 5 10-5" />
       </svg>
     ),
-    title: 'World Coaching',
+    title: 'World Business Coaching',
     description:
-      'Running a world is rewarding — but it can also be lonely. We\'ll help you build the strategy, systems, and leadership skills to grow sustainably, without losing yourself in the process.',
+      'Running a world business is rewarding — but it can also be lonely. We\'ll help you build the strategy, systems, and leadership skills to grow sustainably, without losing yourself in the process.',
     duration: '12–16 weeks',
   },
   {

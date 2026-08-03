@@ -383,10 +383,8 @@ img {
 }
 
 .hero__title-gradient {
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #008080;
+  -webkit-text-fill-color: #008080;
 }
 
 .hero__subtitle {

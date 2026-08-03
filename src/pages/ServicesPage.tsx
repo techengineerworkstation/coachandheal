@@ -109,7 +109,7 @@ const services = [
         <path d="M2 12l10 5 10-5" />
       </svg>
     ),
-    title: 'World Coaching',
+    title: 'World Business Coaching',
     subtitle: 'Expand Your Impact with Strategy',
     color: '#06b6d4',
     duration: '12–16 weeks',

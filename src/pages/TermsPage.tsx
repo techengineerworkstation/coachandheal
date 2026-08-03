@@ -40,7 +40,7 @@ export default function TermsPage() {
             <p>
               Coach & Heal is a coaching and wellness platform operated by Coach
               Ibe / Ibereal Enterprise, based in Lagos, Nigeria. We provide
-              certified life, health, career, and world coaching services,
+              certified life, health, career, and world business coaching services,
               both online and in-person through partner wellness centers across
               Nigeria.
             </p>
@@ -51,7 +51,7 @@ export default function TermsPage() {
               <li><strong>Life Coaching:</strong> 8–12 week programs focused on personal growth, purpose, and fulfillment</li>
               <li><strong>Career Coaching:</strong> 6–10 week programs for career advancement, transitions, and professional development</li>
               <li><strong>Health Coaching:</strong> 8–12 week programs for sustainable wellness habits and lifestyle improvement</li>
-              <li><strong>World Coaching:</strong> 12–16 week programs for entrepreneurs and world owners seeking growth</li>
+              <li><strong>World Business Coaching:</strong> 12–16 week programs for entrepreneurs and world business owners seeking growth</li>
               <li><strong>Wellness Technology Sessions:</strong> Optional sessions using non-invasive wellness devices for additional insights</li>
             </ul>
             <p>

@@ -29,7 +29,7 @@ const testimonials = [
   },
   {
     name: 'Ngozi E.',
-    role: 'World Coaching Client',
+    role: 'World Business Coaching Client',
     avatar: 'NE',
     rating: 5,
     text: 'My revenue doubled in 4 months. Coach Ibe helped me build marketing systems, improve my leadership, and get financial clarity. Pure gold for any entrepreneur.',
