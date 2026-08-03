@@ -5,7 +5,7 @@ const footerLinks = {
     { label: 'Life Coaching', to: '/services#life-coaching' },
     { label: 'Career Coaching', to: '/services#career-coaching' },
     { label: 'Health Coaching', to: '/services#health-coaching' },
-    { label: 'Business Coaching', to: '/services#business-coaching' },
+    { label: 'World Coaching', to: '/services#world-coaching' },
     { label: 'Wellness Technology', to: '/services#wellness-tech' },
   ],
   Company: [
@@ -32,7 +32,7 @@ export default function Footer() {
               <span className="navbar__logo-text">Coach & Heal</span>
             </Link>
             <p className="footer__tagline">
-              Empowering growth in life, health, career, and business.
+              Empowering growth in life, health, career, and world.
               Personalized coaching to help you achieve balance, confidence,
               and lasting success — available online and across Nigeria.
             </p>

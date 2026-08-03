@@ -101,7 +101,7 @@ const services = [
     idealFor: 'Busy professionals who want to feel better in body and mind — without giving up their life to do it.',
   },
   {
-    id: 'business-coaching',
+    id: 'world-coaching',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M12 2L2 7l10 5 10-5-10-5z" />
@@ -109,27 +109,27 @@ const services = [
         <path d="M2 12l10 5 10-5" />
       </svg>
     ),
-    title: 'Business Coaching',
-    subtitle: 'Scale Your Business with Strategy',
+    title: 'World Coaching',
+    subtitle: 'Expand Your Impact with Strategy',
     color: '#06b6d4',
     duration: '12–16 weeks',
     format: 'One-on-one sessions',
-    description: `Running a business is rewarding — but it can also be isolating and exhausting. Whether you're just starting out or looking to scale, we'll help you build the strategy, systems, and leadership skills to grow sustainably — without losing yourself in the process.`,
+    description: `Creating impact is rewarding — but it can also be isolating and exhausting. Whether you're just starting out or looking to scale, we'll help you build the strategy, systems, and leadership skills to grow sustainably — without losing yourself in the process.`,
     whatWeExplore: [
-      'Your business model and where the real opportunities are',
+      'Your vision and where the real opportunities are',
       'Marketing and client acquisition that actually converts',
       'Leadership skills that inspire your team',
       'Financial clarity — knowing your numbers and profit margins',
       'Systems and processes that free up your time',
     ],
     whatYouGain: [
-      'A clear business strategy and growth plan',
+      'A clear growth strategy and growth plan',
       'Marketing and client acquisition systems that work',
       'Leadership and team management skills',
       'Financial clarity and improved profitability',
       'The confidence to lead without burnout',
     ],
-    idealFor: 'Entrepreneurs and small business owners ready to grow strategically and build something that lasts.',
+    idealFor: 'Entrepreneurs and small visionaries ready to grow strategically and build something that lasts.',
   },
   {
     id: 'wellness-tech',
@@ -216,7 +216,7 @@ export default function ServicesPage() {
             <p className="services-hero__subtitle">
               We believe true success comes when all areas of life are in harmony.
               Whether you're looking for personal growth, career advancement,
-              better health, or business success — we're here to walk alongside you.
+              better health, or lasting success — we're here to walk alongside you.
             </p>
           </motion.div>
         </div>

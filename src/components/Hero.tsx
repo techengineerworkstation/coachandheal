@@ -26,7 +26,7 @@ export default function Hero() {
         >
           Empowering Growth in
           <br />
-          <span className="hero__title-gradient">Life, Health & Business</span>
+          <span className="hero__title-gradient">Life, Health & World</span>
         </motion.h1>
 
         <motion.p
@@ -35,10 +35,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Certified life, health, career & business coaching — designed to help
+          Certified life, health, career & world coaching — designed to help
           you find clarity, build confidence, and create lasting change. Whether
           you're looking for personal growth, career advancement, better health,
-          or business success, we're here to walk alongside you.
+          or world success, we're here to walk alongside you.
         </motion.p>
 
         <motion.div
