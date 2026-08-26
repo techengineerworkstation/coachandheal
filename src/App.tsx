@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ChatWidget from './components/ChatWidget'
 import MusicPlayer from './components/MusicPlayer'
+import ThemeSwitcher from './components/ThemeSwitcher'
 import HomePage from './pages/HomePage'
 import ServicesPage from './pages/ServicesPage'
 import AboutPage from './pages/AboutPage'
@@ -74,6 +75,7 @@ export default function App() {
       <Footer />
       <ChatWidget />
       <MusicPlayer />
+      <ThemeSwitcher />
     </div>
   )
 }
