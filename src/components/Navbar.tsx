@@ -50,7 +50,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer noreferrer"
           >
-            Book a Session
+            Arrange a Session
           </a>
           <a
             href="https://t.me/coachandheal"
@@ -103,7 +103,7 @@ export default function Navbar() {
               className="navbar__cta navbar__cta--mobile"
               onClick={handleNavClick}
             >
-              Book a Session
+              Arrange a Session
             </Link>
           </motion.div>
         )}
