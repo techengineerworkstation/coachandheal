@@ -3296,3 +3296,115 @@ img {
     left: 16px;
   }
 }
+
+/* ============================================
+   Counselling Core Section
+   ============================================ */
+
+.counselling-section {
+  padding: 90px 0 40px;
+  background: var(--color-bg-secondary);
+}
+
+.counselling-section__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.counselling-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.counselling-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+}
+
+.counselling-card__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.counselling-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.counselling-card:hover .counselling-card__media img {
+  transform: scale(1.05);
+}
+
+.counselling-card__tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(10, 10, 15, 0.75);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.counselling-card__body {
+  padding: 22px 24px 26px;
+}
+
+.counselling-card__title {
+  font-size: 1.12rem;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+
+.counselling-card__blurb {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.counselling-card__link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.counselling-card__link:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   Side Associations Divider
+   ============================================ */
+
+.side-associations {
+  padding: 100px 0 30px;
+  text-align: center;
+}
+
+.side-associations .section-subtitle {
+  max-width: 640px;
+  margin: 18px auto 0;
+}
+
+@media (max-width: 768px) {
+  .counselling-section {
+    padding: 70px 0 30px;
+  }
+
+  .counselling-section__grid {
+    grid-template-columns: 1fr;
+  }
+}

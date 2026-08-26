@@ -15,6 +15,11 @@ import CareerCoachingPage from './pages/CareerCoachingPage'
 import HealthCoachingPage from './pages/HealthCoachingPage'
 import WorldBusinessCoachingPage from './pages/WorldBusinessCoachingPage'
 import WellnessTechPage from './pages/WellnessTechPage'
+import IndividualCounsellingPage from './pages/IndividualCounsellingPage'
+import RelationshipCounsellingPage from './pages/RelationshipCounsellingPage'
+import CareerAcademicCounsellingPage from './pages/CareerAcademicCounsellingPage'
+import GriefCounsellingPage from './pages/GriefCounsellingPage'
+import YouthCounsellingPage from './pages/YouthCounsellingPage'
 import { preventClickjacking, setSecurityHeaders, logSecurityEvent } from './utils/security'
 
 function ScrollToTop() {
@@ -62,6 +67,11 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/individual-counselling" element={<IndividualCounsellingPage />} />
+          <Route path="/services/relationship-counselling" element={<RelationshipCounsellingPage />} />
+          <Route path="/services/career-academic-counselling" element={<CareerAcademicCounsellingPage />} />
+          <Route path="/services/grief-counselling" element={<GriefCounsellingPage />} />
+          <Route path="/services/youth-counselling" element={<YouthCounsellingPage />} />
           <Route path="/services/life-coaching" element={<LifeCoachingPage />} />
           <Route path="/services/career-coaching" element={<CareerCoachingPage />} />
           <Route path="/services/health-coaching" element={<HealthCoachingPage />} />

@@ -7,7 +7,14 @@ interface FooterLink {
 }
 
 const footerLinks: Record<string, FooterLink[]> = {
-  Services: [
+  Counselling: [
+    { label: 'Individual Counselling', to: '/services/individual-counselling', desc: 'A safe space to talk & heal' },
+    { label: 'Relationship & Family', to: '/services/relationship-counselling', desc: 'Rebuild connection & trust' },
+    { label: 'Career & Academic', to: '/services/career-academic-counselling', desc: 'Clarity for study & work' },
+    { label: 'Grief, Trauma & Crisis', to: '/services/grief-counselling', desc: 'Support through hard moments' },
+    { label: 'Youth & Teen', to: '/services/youth-counselling', desc: 'Guidance for young minds' },
+  ],
+  'Side Associations': [
     { label: 'Life Coaching', to: '/services/life-coaching', desc: 'Clarity, purpose & direction' },
     { label: 'Career Coaching', to: '/services/career-coaching', desc: 'CVs, interviews & advancement' },
     { label: 'Health Coaching', to: '/services/health-coaching', desc: 'Sustainable energy & habits' },
@@ -38,9 +45,10 @@ export default function Footer() {
               <span className="navbar__logo-text">Coach & Heal</span>
             </Link>
             <p className="footer__tagline">
-              Empowering growth in life, health, career, and world business.
-              Personalized coaching to help you achieve balance, confidence,
-              and lasting success — available online and across Nigeria.
+              Professional counselling at the heart of everything we do —
+              individual, relationship, career, grief, and youth counselling,
+              supported by health and therapeutic services. Online worldwide
+              and across Nigeria.
             </p>
             <div className="footer__contact">
               <a href="https://wa.me/2347010744142" target="_blank" rel="noopener noreferrer noreferrer">

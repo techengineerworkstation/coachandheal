@@ -7,13 +7,26 @@ const features = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
       </svg>
     ),
-    title: 'Life Coaching',
+    title: 'Individual Counselling',
     description:
-      'Sometimes you just need someone to help you find clarity. We\'ll work together to uncover your purpose, overcome the beliefs holding you back, and build a life that feels meaningful — on your terms.',
-    duration: '8–12 weeks',
+      'A safe, confidential space to talk through stress, anxiety, low mood, or feeling stuck — with a professional who genuinely listens and practical support that lasts.',
+    duration: 'One-on-one & online',
+  },
+  {
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+      </svg>
+    ),
+    title: 'Relationship & Family Counselling',
+    description:
+      'Rebuild trust, communication, and connection. Whether you come as a couple, a family, or on your own — we help you move from conflict to understanding.',
+    duration: 'Couples & families',
   },
   {
     icon: (
@@ -22,45 +35,21 @@ const features = [
         <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
       </svg>
     ),
-    title: 'Career Coaching',
+    title: 'Career & Academic Counselling',
     description:
-      'Whether you\'re eyeing a promotion, thinking about a change, or coming back after a break — we\'ll help you find your footing and move forward with confidence and a clear plan.',
-    duration: '6–10 weeks',
+      'Choosing a course, changing careers, or returning after a break — make life-shaping decisions with clarity, self-knowledge, and a realistic roadmap.',
+    duration: 'Students & professionals',
   },
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
       </svg>
     ),
-    title: 'Health Coaching',
+    title: 'Grief, Trauma & Crisis Counselling',
     description:
-      'Feeling run down, stressed, or out of sync? We\'ll help you build small, sustainable habits that give you more energy, better sleep, and a clearer mind — without extreme diets or burnout.',
-    duration: '8–12 weeks',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 2L2 7l10 5 10-5-10-5z" />
-        <path d="M2 17l10 5 10-5" />
-        <path d="M2 12l10 5 10-5" />
-      </svg>
-    ),
-    title: 'World Business Coaching',
-    description:
-      'Running a world business is rewarding — but it can also be lonely. We\'ll help you build the strategy, systems, and leadership skills to grow sustainably, without losing yourself in the process.',
-    duration: '12–16 weeks',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M12 6v6l4 2" />
-      </svg>
-    ),
-    title: 'Wellness Technology',
-    description:
-      'Want to see what\'s happening inside? Our gentle, non-invasive sensors give you a clear view of your body\'s natural rhythms — helping you understand yourself better and make smarter choices.',
+      'Gentle, confidential support through loss, trauma, and sudden crisis — at your pace, without judgment, honoring your story every step of the way.',
+    duration: 'Sensitive & confidential',
   },
   {
     icon: (
@@ -68,9 +57,10 @@ const features = [
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
     ),
-    title: 'Complete Privacy',
+    title: 'Youth & Teen Counselling',
     description:
-      'Your most personal information stays yours. No cloud uploads, no third-party access, no surprises. We\'ve built our entire system with your privacy at its core.',
+      'School pressure, friendships, self-esteem, and growing up — a respectful space for ages 10–19 to be heard, with parent guidance that supports lasting change.',
+    duration: 'Ages 10–19',
   },
 ]
 
@@ -107,14 +97,14 @@ export default function Features() {
         >
           <span className="section-label">What We Offer</span>
           <h2 className="section-title">
-            Coaching That Meets You
+            Counselling That Meets You
             <br />
             <span className="gradient-text">Wherever You Are</span>
           </h2>
           <p className="section-subtitle">
-            Every person's journey is different. That's why we offer a range of
-            services — all designed to help you grow, heal, and thrive in the
-            areas that matter most to you.
+            Counselling is our core — every service flows from it. Confidential,
+            compassionate, and professional support, with health and therapeutic
+            services alongside.
           </p>
         </motion.div>
 
@@ -150,7 +140,7 @@ export default function Features() {
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           <Link to="/services" className="btn btn--primary">
-            Learn More About Each Service
+            Explore Our Counselling Services
           </Link>
         </motion.div>
       </div>

@@ -10,8 +10,8 @@ interface Message {
 
 const botResponses: Record<string, string> = {
   greeting: "Hello! Welcome to Coach & Heal. I'm here to help you find the right support for your journey. How can I assist you today?",
-  services: "We offer four main coaching services:\n\n1. Life Coaching — Find clarity and purpose\n2. Career Coaching — Advance your professional path\n3. Health Coaching — Build sustainable wellness habits\n4. World Business Coaching — Scale your world strategically\n\nWhich one interests you most?",
-  coaching: "Our coaching sessions are personalized one-on-one experiences. Each program runs 6-16 weeks depending on your goals. We start with a free discovery call to understand where you are and where you want to be. Would you like to book one?",
+  services: "Counselling is at the heart of what we do:\n\n1. Individual Counselling — a safe space to talk & heal\n2. Relationship & Family Counselling — rebuild connection\n3. Career & Academic Counselling — clarity for study & work\n4. Grief, Trauma & Crisis Counselling — support through hard moments\n5. Youth & Teen Counselling — guidance for young minds\n\nWe also offer health coaching, business coaching, and wellness technology as side associations. Which one interests you most?",
+  coaching: "Our counselling sessions are personalized one-on-one experiences, available online and in person. We start with a free discovery call to understand where you are and where you want to be. Would you like to arrange one?",
   equipment: "We use gentle, non-invasive wellness devices like the BrainBit and MINDO headbands. They help us understand your body's natural patterns so we can personalize your coaching. But don't worry — they're completely optional!",
   pricing: "Our coaching programs vary based on duration and format. We offer flexible payment options to make our services accessible. The best way to get specific pricing is to book a free discovery call. Shall I help you with that?",
   contact: "You can reach us through:\n\nWhatsApp: +234 701 074 4142\nWhatsApp: +234 905 293 3182\nEmail: Ibe@coachandheal.store\n\nOr book a free discovery call right on our website!",

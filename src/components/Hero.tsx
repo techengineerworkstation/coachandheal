@@ -24,9 +24,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Empowering Growth in
+          Professional Counselling for
           <br />
-          <span className="hero__title-gradient">Life, Health & World Business</span>
+          <span className="hero__title-gradient">Every Season of Life</span>
         </motion.h1>
 
         <motion.p
@@ -35,10 +35,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Certified life, health, career & world business coaching — designed to help
-          you find clarity, build confidence, and create lasting change. Whether
-          you're looking for personal growth, career advancement, better health,
-          or world business success, we're here to walk alongside you.
+          Counselling is at the heart of Coach & Heal — individual, relationship,
+          career, grief, and youth counselling, delivered with compassion and
+          confidentiality. Supported by our health and therapeutic services, we
+          help you find clarity, healing, and lasting balance.
         </motion.p>
 
         <motion.div

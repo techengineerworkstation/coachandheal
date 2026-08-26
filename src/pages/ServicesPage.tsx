@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { useInView } from '../hooks/useScrollPosition'
 import EquipmentSection from '../components/EquipmentSection'
 import BodyWellnessSection from '../components/BodyWellnessSection'
@@ -10,6 +11,44 @@ const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' as const } },
 }
+
+const counsellingServices = [
+  {
+    id: 'individual-counselling',
+    title: 'Individual Counselling',
+    blurb: 'A safe, confidential space to talk through stress, anxiety, low mood, and life transitions — with someone who truly listens.',
+    tag: 'One-on-one & online',
+    image: 'https://images.pexels.com/photos/1181715/pexels-photo-1181715.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'relationship-counselling',
+    title: 'Relationship & Family Counselling',
+    blurb: 'Rebuild trust, communication, and connection — for couples, parents, and families navigating difficult seasons.',
+    tag: 'Couples & families',
+    image: 'https://images.pexels.com/photos/1128318/pexels-photo-1128318.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'career-academic-counselling',
+    title: 'Career & Academic Counselling',
+    blurb: 'Course choices, career changes, exam stress — make life-shaping decisions with clarity instead of pressure.',
+    tag: 'Students & professionals',
+    image: 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'grief-counselling',
+    title: 'Grief, Trauma & Crisis Counselling',
+    blurb: 'Gentle, confidential support through loss, trauma, and life-shattering change — at your pace, without judgment.',
+    tag: 'Sensitive & confidential',
+    image: 'https://images.pexels.com/photos/8613319/pexels-photo-8613319.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'youth-counselling',
+    title: 'Youth & Teen Counselling',
+    blurb: 'A respectful space for ages 10–19 to talk about school pressure, friendships, self-esteem, and growing up.',
+    tag: 'Ages 10–19',
+    image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+]
 
 const services = [
   {
@@ -222,6 +261,26 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Counselling — Core */}
+      <CounsellingSection />
+
+      {/* Side Associations — Health & Therapeutic Services */}
+      <section className="side-associations">
+        <div className="container">
+          <span className="section-label">Side Associations</span>
+          <h2 className="section-title">
+            Health &amp; Therapeutic
+            <br />
+            <span className="gradient-text">Services</span>
+          </h2>
+          <p className="section-subtitle">
+            Alongside our core counselling practice, we offer complementary
+            coaching and therapeutic services that support the whole person —
+            body, mind, and ambition.
+          </p>
+        </div>
+      </section>
+
       {/* Services Detail */}
       {services.map((service, i) => (
         <ServiceDetail key={service.id} service={service} index={i} />
@@ -330,6 +389,61 @@ function ServiceDetail({ service, index }: { service: typeof services[0]; index:
             </div>
           )}
         </motion.div>
+      </div>
+    </section>
+  )
+}
+
+function CounsellingSection() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, 0.05)
+
+  return (
+    <section className="counselling-section" ref={ref}>
+      <div className="container">
+        <motion.div
+          className="section-header"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="section-label">Our Core</span>
+          <h2 className="section-title">
+            Professional Counselling
+            <br />
+            <span className="gradient-text">At the Heart of Everything We Do</span>
+          </h2>
+          <p className="section-subtitle">
+            Counselling is who we are — every other service flows from it.
+            Confidential, compassionate, and professional support for every
+            season of life.
+          </p>
+        </motion.div>
+
+        <div className="counselling-section__grid">
+          {counsellingServices.map((c, i) => (
+            <motion.div
+              key={c.id}
+              className="counselling-card"
+              initial={{ opacity: 0, y: 40 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+            >
+              <div className="counselling-card__media">
+                <img src={c.image} alt={c.title} loading="lazy" />
+                <span className="counselling-card__tag">{c.tag}</span>
+              </div>
+              <div className="counselling-card__body">
+                <h3 className="counselling-card__title">{c.title}</h3>
+                <p className="counselling-card__blurb">{c.blurb}</p>
+                <Link to={`/services/${c.id}`} className="counselling-card__link">
+                  Learn more →
+                </Link>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   )

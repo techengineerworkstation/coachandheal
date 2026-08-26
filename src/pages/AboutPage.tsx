@@ -29,7 +29,7 @@ const values = [
   },
   {
     title: 'Accessible to All',
-    description: 'Quality coaching shouldn\'t be a luxury. We offer flexible options and work with you to find what fits your budget and schedule.',
+    description: 'Quality counselling shouldn\'t be a luxury. We offer flexible options and work with you to find what fits your budget and schedule.',
     icon: '🌍',
   },
 ]
@@ -68,15 +68,16 @@ export default function AboutPage() {
             <h2>Our Story</h2>
             <p>
               Coach & Heal was born from a simple observation: too many people
-              are struggling in silence. They feel stuck in their careers,
-              overwhelmed by stress, disconnected from their bodies, or unsure
-              about their next step — and they don't know where to turn.
+              are struggling in silence. They feel anxious, overwhelmed, or
+              disconnected from the people they love; they're grieving without
+              support, or facing life decisions without guidance — and they
+              don't know where to turn.
             </p>
             <p>
-              We are passionate and results-driven coaches committed to helping
-              individuals achieve holistic success. With years of experience, we
-              specialize in guiding people through meaningful transformations in
-              their personal life, health, career, and world business.
+              We are passionate, results-driven counsellors committed to
+              walking alongside every client. Counselling is our core — and
+              through our health and therapeutic side associations, we support
+              the whole person: mind, body, and ambition.
             </p>
             <p>
               Our approach is holistic and personalized. We believe true success
@@ -168,13 +169,13 @@ export default function AboutPage() {
           >
             <h2>Meet Coach Ibe</h2>
             <p>
-              Certified Life, Health, Career & World Business Coach. When not
-              coaching, you'll find us reading, exercising, or spending quality
+              Certified counsellor, coach, and wellness practitioner. When not
+              counselling, you'll find us reading, exercising, or spending quality
               time with family. We believe in practicing what we preach.
             </p>
             <p>
-              With a passion for helping people unlock their potential, Coach Ibe
-              combines proven coaching methodologies with modern wellness
+              With a passion for helping people find clarity and healing, Coach Ibe
+              combines professional counselling methodologies with modern wellness
               technology to deliver results that last. Every session is tailored
               to your unique needs, pace, and goals.
             </p>
