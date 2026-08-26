@@ -60,7 +60,7 @@ const features = [
     ),
     title: 'Wellness Technology',
     description:
-      'Want to see what\'s happening inside? Our gentle, non-invasive sensors give you a window into your body\'s natural rhythms — helping you understand yourself better and make smarter choices.',
+      'Want to see what\'s happening inside? Our gentle, non-invasive sensors give you a clear view of your body\'s natural rhythms — helping you understand yourself better and make smarter choices.',
   },
   {
     icon: (

@@ -47,6 +47,10 @@ export default function ContactPage() {
                 <a href="https://wa.me/2347010744142" target="_blank" rel="noopener noreferrer noreferrer">
                   +234 701 074 4142
                 </a>
+                <br />
+                <a href="https://wa.me/2349052933182" target="_blank" rel="noopener noreferrer noreferrer">
+                  +234 905 293 3182
+                </a>
                 <p>Available Monday — Saturday, 8am — 8pm WAT</p>
               </div>
 
@@ -139,6 +143,14 @@ export default function ContactPage() {
                 rel="noopener noreferrer noreferrer"
               >
                 Book Free Discovery Call
+              </a>
+              <a
+                href="https://wa.me/2349052933182?text=Hello%2C%20I%27d%20like%20to%20book%20a%20free%20discovery%20call."
+                className="btn btn--ghost"
+                target="_blank"
+                rel="noopener noreferrer noreferrer"
+              >
+                WhatsApp (Line 2)
               </a>
               <a
                 href="mailto:Ibe@coachandheal.store?subject=Discovery%20Call%20Request"

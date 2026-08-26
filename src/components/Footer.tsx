@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom'
 
-const footerLinks = {
+interface FooterLink {
+  label: string
+  to: string
+  desc?: string
+}
+
+const footerLinks: Record<string, FooterLink[]> = {
   Services: [
-    { label: 'Life Coaching', to: '/services#life-coaching' },
-    { label: 'Career Coaching', to: '/services#career-coaching' },
-    { label: 'Health Coaching', to: '/services#health-coaching' },
-    { label: 'World Business Coaching', to: '/services#world-coaching' },
-    { label: 'Wellness Technology', to: '/services#wellness-tech' },
+    { label: 'Life Coaching', to: '/services/life-coaching', desc: 'Clarity, purpose & direction' },
+    { label: 'Career Coaching', to: '/services/career-coaching', desc: 'CVs, interviews & advancement' },
+    { label: 'Health Coaching', to: '/services/health-coaching', desc: 'Sustainable energy & habits' },
+    { label: 'World Business Coaching', to: '/services/world-coaching', desc: 'Strategy, systems & leadership' },
+    { label: 'Wellness Technology', to: '/services/wellness-tech', desc: 'EEG & biofeedback insights' },
   ],
   Company: [
     { label: 'About Us', to: '/about' },
@@ -39,6 +45,9 @@ export default function Footer() {
             <div className="footer__contact">
               <a href="https://wa.me/2347010744142" target="_blank" rel="noopener noreferrer noreferrer">
                 +234 701 074 4142
+              </a>
+              <a href="https://wa.me/2349052933182" target="_blank" rel="noopener noreferrer noreferrer">
+                +234 905 293 3182
               </a>
               <a href="mailto:Ibe@coachandheal.store">Ibe@coachandheal.store</a>
             </div>
@@ -92,6 +101,7 @@ export default function Footer() {
                       <Link to={link.to} className="footer__link">
                         {link.label}
                       </Link>
+                      {link.desc && <span className="footer__link-desc">{link.desc}</span>}
                     </li>
                   ))}
                 </ul>

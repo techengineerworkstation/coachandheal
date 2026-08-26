@@ -144,7 +144,7 @@ const services = [
     color: '#8b5cf6',
     duration: 'Ongoing',
     format: 'In-person & online sessions',
-    description: `Imagine being able to see how your body responds to stress, focus, or relaxation — in real time. Our wellness technology uses gentle, non-invasive sensors to give you a window into your body's natural rhythms. It's like having a mirror for your inner world — helping you understand yourself better and make smarter choices about your well-being.`,
+    description: `Imagine being able to see how your body responds to stress, focus, or relaxation — in real time. Our wellness technology uses gentle, non-invasive sensors to give you a clear view of your body's natural rhythms — helping you understand yourself better and make smarter choices about your well-being.`,
     whatWeExplore: [
       'How your body naturally responds to different activities',
       'What happens to your focus during work versus rest',
@@ -247,6 +247,15 @@ function ServiceDetail({ service, index }: { service: typeof services[0]; index:
   const isInView = useInView(ref, 0.1)
   const isEven = index % 2 === 0
 
+  const serviceLinks: Record<string, string> = {
+    'life-coaching': '/services/life-coaching',
+    'career-coaching': '/services/career-coaching',
+    'health-coaching': '/services/health-coaching',
+    'world-coaching': '/services/world-coaching',
+    'wellness-tech': '/services/wellness-tech',
+  }
+  const pageLink = serviceLinks[service.id]
+
   return (
     <section
       id={service.id}
@@ -309,6 +318,17 @@ function ServiceDetail({ service, index }: { service: typeof services[0]; index:
           <div className="service-detail__ideal">
             <strong>Ideal for:</strong> {service.idealFor}
           </div>
+
+          {pageLink && (
+            <div className="service-detail__link">
+              <a
+                href={pageLink}
+                className="btn btn--primary btn--sm"
+              >
+                View Full Details →
+              </a>
+            </div>
+          )}
         </motion.div>
       </div>
     </section>

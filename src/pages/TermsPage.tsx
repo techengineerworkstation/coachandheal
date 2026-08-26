@@ -141,7 +141,7 @@ export default function TermsPage() {
             <h2>13. Contact Us</h2>
             <p>If you have questions about these Terms, please contact us:</p>
             <ul>
-              <li>WhatsApp: <a href="https://wa.me/2347010744142">+234 701 074 4142</a></li>
+              <li>WhatsApp: <a href="https://wa.me/2347010744142">+234 701 074 4142</a> / <a href="https://wa.me/2349052933182">+234 905 293 3182</a></li>
               <li>Email: <a href="mailto:Ibe@coachandheal.store">Ibe@coachandheal.store</a></li>
               <li>Location: Lagos, Nigeria</li>
             </ul>
