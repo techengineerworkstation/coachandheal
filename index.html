@@ -4,8 +4,12 @@
     <script>
       try {
         var t = localStorage.getItem('coachheal-theme');
-        if (t && ['default','bronze','teal','cream'].indexOf(t) !== -1) {
+        if (t && ['default','bronze','teal'].indexOf(t) !== -1) {
           document.documentElement.setAttribute('data-theme', t);
+        }
+        var c = localStorage.getItem('coachheal-cream');
+        if (c === 'true') {
+          document.documentElement.setAttribute('data-cream', 'true');
         }
       } catch(e) {}
     </script>

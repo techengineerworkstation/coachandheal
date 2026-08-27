@@ -1,24 +1,29 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
-type Theme = 'default' | 'bronze' | 'teal' | 'cream'
+type Theme = 'default' | 'bronze' | 'teal'
 
 const themes: { id: Theme; label: string; colors: string[] }[] = [
   { id: 'default', label: 'Indigo', colors: ['#6366f1', '#a855f7', '#ec4899'] },
   { id: 'bronze', label: 'Bronze', colors: ['#cd7f32', '#b87333', '#daa520'] },
   { id: 'teal', label: 'Teal', colors: ['#14b8a6', '#06b6d4', '#5eead4'] },
-  { id: 'cream', label: 'Cream White', colors: ['#f8f5f0', '#ffffff', '#6366f1'] },
 ]
 
 export default function ThemeSwitcher() {
   const [current, setCurrent] = useState<Theme>('default')
+  const [creamMode, setCreamMode] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const saved = localStorage.getItem('coachheal-theme') as Theme | null
+    const savedCream = localStorage.getItem('coachheal-cream') === 'true'
     if (saved && themes.some((t) => t.id === saved)) {
       setCurrent(saved)
       document.documentElement.setAttribute('data-theme', saved)
+    }
+    if (savedCream) {
+      setCreamMode(true)
+      document.documentElement.setAttribute('data-cream', 'true')
     }
   }, [])
 
@@ -26,7 +31,17 @@ export default function ThemeSwitcher() {
     setCurrent(theme)
     document.documentElement.setAttribute('data-theme', theme)
     localStorage.setItem('coachheal-theme', theme)
-    setIsOpen(false)
+  }
+
+  const toggleCream = () => {
+    const next = !creamMode
+    setCreamMode(next)
+    if (next) {
+      document.documentElement.setAttribute('data-cream', 'true')
+    } else {
+      document.documentElement.removeAttribute('data-cream')
+    }
+    localStorage.setItem('coachheal-cream', String(next))
   }
 
   const cycleTheme = () => {
@@ -67,6 +82,21 @@ export default function ThemeSwitcher() {
               {current === theme.id && <span className="theme-switcher__check">✓</span>}
             </button>
           ))}
+
+          <div className="theme-switcher__divider" />
+
+          <button
+            className={`theme-switcher__option ${creamMode ? 'theme-switcher__option--active' : ''}`}
+            onClick={toggleCream}
+          >
+            <div className="theme-switcher__swatch">
+              <span className="theme-switcher__dot" style={{ background: '#f8f5f0' }} />
+              <span className="theme-switcher__dot" style={{ background: '#ffffff' }} />
+              <span className="theme-switcher__dot" style={{ background: currentTheme.colors[0] }} />
+            </div>
+            <span className="theme-switcher__label">Cream Infusion</span>
+            {creamMode && <span className="theme-switcher__check">✓</span>}
+          </button>
         </motion.div>
       )}
 
@@ -82,7 +112,9 @@ export default function ThemeSwitcher() {
         <div
           className="theme-switcher__icon"
           style={{
-            background: `linear-gradient(135deg, ${currentTheme.colors[0]}, ${currentTheme.colors[2]})`,
+            background: creamMode
+              ? `linear-gradient(135deg, #f8f5f0, #ffffff, ${currentTheme.colors[0]})`
+              : `linear-gradient(135deg, ${currentTheme.colors[0]}, ${currentTheme.colors[2]})`,
           }}
         >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
