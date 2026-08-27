@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
-type Theme = 'default' | 'bronze' | 'teal'
+type Theme = 'default' | 'bronze' | 'teal' | 'cream'
 
 const themes: { id: Theme; label: string; colors: string[] }[] = [
   { id: 'default', label: 'Indigo', colors: ['#6366f1', '#a855f7', '#ec4899'] },
   { id: 'bronze', label: 'Bronze', colors: ['#cd7f32', '#b87333', '#daa520'] },
   { id: 'teal', label: 'Teal', colors: ['#14b8a6', '#06b6d4', '#5eead4'] },
+  { id: 'cream', label: 'Cream White', colors: ['#f8f5f0', '#ffffff', '#6366f1'] },
 ]
 
 export default function ThemeSwitcher() {

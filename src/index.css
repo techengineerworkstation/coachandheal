@@ -198,6 +198,126 @@ html {
 }
 
 /* ============================================
+   Cream / Off-White Theme
+   ============================================ */
+
+[data-theme="cream"] {
+  --color-bg: #f8f5f0;
+  --color-bg-secondary: #f0ece5;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f5f0eb;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #4a4a4a;
+  --color-text-muted: #7a7a7a;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-hover: rgba(0, 0, 0, 0.15);
+  --color-primary: #6366f1;
+  --color-primary-light: #818cf8;
+  --color-secondary: #a855f7;
+  --color-accent: #ec4899;
+  --color-cyan: #06b6d4;
+  --gradient-primary: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+  --gradient-bg: radial-gradient(ellipse at 50% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 60%);
+}
+
+[data-theme="cream"] .hero__title {
+  background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme="cream"] .gradient-text {
+  background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme="cream"] .music-player__toggle {
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.5);
+}
+
+[data-theme="cream"] .music-player__toggle:hover {
+  box-shadow: 0 6px 28px rgba(99, 102, 241, 0.65);
+}
+
+[data-theme="cream"] .music-player__btn--play {
+  background: #6366f1;
+}
+
+[data-theme="cream"] .music-player__progress-fill {
+  background: #6366f1;
+}
+
+[data-theme="cream"] .music-player__slider::-webkit-slider-thumb {
+  background: #6366f1;
+}
+
+[data-theme="cream"] .music-player__track--active {
+  background: rgba(99, 102, 241, 0.12);
+  color: #6366f1;
+}
+
+[data-theme="cream"] .theme-switcher__toggle {
+  border-color: rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+}
+
+[data-theme="cream"] .music-player__panel {
+  background: rgba(255, 255, 255, 0.97);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="cream"] .music-player__track {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="cream"] .music-player__track:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="cream"] .music-player__track--active {
+  background: rgba(99, 102, 241, 0.12);
+}
+
+[data-theme="cream"] .theme-switcher__panel {
+  background: rgba(255, 255, 255, 0.97);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="cream"] .theme-switcher__option {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="cream"] .theme-switcher__option:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="cream"] .theme-switcher__option--active {
+  background: rgba(99, 102, 241, 0.08);
+  border-color: #6366f1;
+}
+
+[data-theme="cream"] .service-hero__overlay {
+  background: linear-gradient(
+    to top,
+    rgba(248, 245, 240, 0.95) 0%,
+    rgba(248, 245, 240, 0.6) 50%,
+    rgba(248, 245, 240, 0.2) 100%
+  );
+}
+
+[data-theme="cream"] .music-player__volume-icon {
+  color: var(--color-text-muted);
+}
+
+[data-theme="cream"] .music-player__close {
+  color: var(--color-text-muted);
+}
+
+/* ============================================
    Theme Transition (specific elements only)
    ============================================ */
 
