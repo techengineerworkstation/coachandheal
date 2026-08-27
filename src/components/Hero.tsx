@@ -24,7 +24,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Professional Counselling for
+          Professional Counselling To All Seasons In Life
           <br />
           <span className="hero__title-gradient">Every Season of Life</span>
         </motion.h1>
